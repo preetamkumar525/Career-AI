@@ -1,0 +1,32 @@
+{
+  "vacanciesByDepartment": [
+    { "department": "Railways (RRB)", "vacancies": 48200, "growth": "+18%" },
+    { "department": "Police & Defence", "vacancies": 84500, "growth": "+24%" },
+    { "department": "Postal (India Post)", "vacancies": 44228, "growth": "+12%" },
+    { "department": "Banking (IBPS/SBI)", "vacancies": 26800, "growth": "+9%" },
+    { "department": "Central SSC (CGL/MTS)", "vacancies": 32000, "growth": "+15%" },
+    { "department": "Teaching (State/KVS)", "vacancies": 58000, "growth": "+6%" },
+    { "department": "State PSCs", "vacancies": 12400, "growth": "+14%" }
+  ],
+  "examPopularity": [
+    { "name": "SSC Exams (CGL/CHSL/MTS)", "value": 34, "color": "#0e86d4" },
+    { "name": "Railway (RRB ALP/NTPC)", "value": 26, "color": "#14b8a6" },
+    { "name": "State Police & Defence", "value": 18, "color": "#f97316" },
+    { "name": "Banking (SBI/IBPS)", "value": 12, "color": "#8b5cf6" },
+    { "name": "UPSC & State PSCs", "value": 7, "color": "#ec4899" },
+    { "name": "Teaching (CTET/TET)", "value": 3, "color": "#eab308" }
+  ],
+  "fiveYearVacancyTrend": [
+    { "year": "2022", "vacancies": 185000, "applications": 28000000 },
+    { "year": "2023", "vacancies": 224000, "applications": 31500000 },
+    { "year": "2024", "vacancies": 268000, "applications": 34000000 },
+    { "year": "2025", "vacancies": 295000, "applications": 36200000 },
+    { "year": "2026 (Est.)", "vacancies": 312000, "applications": 38500000 }
+  ],
+  "summaryStats": {
+    "totalActiveVacancies": "3,12,000+",
+    "totalRegisteredAspirants": "3.85 Crore",
+    "avgSelectionRatio": "1 : 124",
+    "topGrowingSector": "Renewable Tech & Railways"
+  }
+}

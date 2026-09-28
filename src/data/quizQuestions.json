@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "question": "What kind of activities energize you the most?",
+    "question_hi": "आपको सबसे ज़्यादा किस तरह के काम करने में मज़ा आता है?",
+    "options": [
+      { "id": "tech", "text": "Solving logic puzzles, coding, or fixing gadgets", "text_hi": "लॉजिक पहेलियां सुलझाना, कोडिंग या गैजेट्स ठीक करना", "weights": { "software_engineer": 3, "data_scientist": 3, "iti_polytechnic": 2 } },
+      { "id": "bio", "text": "Learning about biology, human body, helping injured people", "text_hi": "मानव शरीर, जीव विज्ञान समझना और बीमारों की मदद करना", "weights": { "doctor_mbbs": 3, "nurse_healthcare": 3 } },
+      { "id": "commerce", "text": "Managing money, tracking expenses, business strategies", "text_hi": "पैसे का हिसाब, बिज़नेस और वित्तीय योजनाएं बनाना", "weights": { "chartered_accountant": 3, "bank_po": 3, "entrepreneur": 2 } },
+      { "id": "public", "text": "Serving society, maintaining law & order, public welfare", "text_hi": "समाज सेवा, कानून व्यवस्था और लोगों के अधिकार की रक्षा", "weights": { "civil_services_ias": 3, "police_defence": 3, "lawyer": 2 } },
+      { "id": "creative", "text": "Drawing, creating videos, designing posters or visual art", "text_hi": "ड्राइंग, वीडियो बनाना, पोस्टर या विजुअल आर्ट डिज़ाइन करना", "weights": { "graphic_uiux_designer": 3, "digital_marketer": 2 } }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Which school subject was or is your favourite?",
+    "question_hi": "स्कूल में आपका सबसे पसंदीदा विषय कौन सा रहा है?",
+    "options": [
+      { "id": "math_phys", "text": "Mathematics or Physics", "text_hi": "गणित (Mathematics) या भौतिक विज्ञान (Physics)", "weights": { "software_engineer": 2, "commercial_pilot": 3, "data_scientist": 2, "iti_polytechnic": 2 } },
+      { "id": "bio_chem", "text": "Biology or Chemistry", "text_hi": "जीव विज्ञान (Biology) या रसायन विज्ञान (Chemistry)", "weights": { "doctor_mbbs": 3, "nurse_healthcare": 3, "agriculture_specialist": 2 } },
+      { "id": "account_eco", "text": "Accounts, Economics or Business Studies", "text_hi": "अकाउंट्स, अर्थशास्त्र या बिज़नेस स्टडीज", "weights": { "chartered_accountant": 3, "bank_po": 3 } },
+      { "id": "pol_hist", "text": "History, Political Science or Civics", "text_hi": "इतिहास, राजनीति शास्त्र या नागरिक शास्त्र", "weights": { "civil_services_ias": 3, "lawyer": 3, "teacher": 2 } },
+      { "id": "art_lang", "text": "Languages, Literature or Fine Arts", "text_hi": "भाषाएं, साहित्य या ललित कला (Fine Arts)", "weights": { "graphic_uiux_designer": 3, "digital_marketer": 2, "teacher": 2 } }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What type of career security vs risk do you prefer?",
+    "question_hi": "नौकरी की सुरक्षा और रिस्क के बारे में आपकी क्या प्राथमिकता है?",
+    "options": [
+      { "id": "max_security", "text": "Guaranteed job security, pension, and fixed working hours (Government Sector)", "text_hi": "शत-प्रतिशत नौकरी की सुरक्षा, पेंशन और निश्चित समय (सरकारी नौकरी)", "weights": { "civil_services_ias": 3, "bank_po": 3, "police_defence": 3, "teacher": 2 } },
+      { "id": "high_growth", "text": "High salary growth based on skills, ready to change jobs for increments (Corporate/Private)", "text_hi": "हुनर के दम पर तेज़ सैलरी ग्रोथ, तरक्की के लिए कंपनी बदलने को तैयार (प्राइवेट सेक्टर)", "weights": { "software_engineer": 3, "data_scientist": 3, "digital_marketer": 2 } },
+      { "id": "self_made", "text": "Building my own venture, ready for initial struggle for unlimited upside (Entrepreneurship)", "text_hi": "खुद का काम/स्टार्टअप, शुरुआत में संघर्ष पर भविष्य में असीमित कमाई", "weights": { "entrepreneur": 4, "agriculture_specialist": 2 } },
+      { "id": "hands_on", "text": "Fast vocational technical employment with low investment (ITI / Diploma / Skilled Trade)", "text_hi": "कम खर्च और कम समय में हुनर सीखकर जल्द काम शुरू करना (ITI / डिप्लोमा)", "weights": { "iti_polytechnic": 4, "nurse_healthcare": 2 } }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "How do you feel about public service and wearing a uniform?",
+    "question_hi": "वर्दी पहनने और राष्ट्र सेवा के बारे में आपका क्या विचार है?",
+    "options": [
+      { "id": "uniform_dream", "text": "It is my dream to wear a uniform and serve the nation with pride", "text_hi": "वर्दी पहनकर गर्व से देश और जनता की सेवा करना मेरा सपना है", "weights": { "police_defence": 4, "commercial_pilot": 2 } },
+      { "id": "admin_service", "text": "I want to lead administrative change and make government policies", "text_hi": "मैं प्रशासनिक फैसले लेना और नीतियां लागू करना चाहता/चाहती हूँ", "weights": { "civil_services_ias": 4 } },
+      { "id": "civilian_desk", "text": "I prefer a professional desk/office role without uniform requirements", "text_hi": "मुझे ऑफिस या डेस्क जॉब पसंद है जहां वर्दी की जरूरत न हो", "weights": { "software_engineer": 2, "chartered_accountant": 2, "bank_po": 2, "data_scientist": 2 } },
+      { "id": "neutral", "text": "Doesn't matter as long as work is meaningful and pays well", "text_hi": "कोई फर्क नहीं पड़ता, बस काम अच्छा और सम्मानजनक होना चाहिए", "weights": { "doctor_mbbs": 2, "teacher": 2 } }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What is your comfort level with Mathematics and analytical numbers?",
+    "question_hi": "गणित और आंकड़ों (Numbers) के साथ आपका सहज स्तर क्या है?",
+    "options": [
+      { "id": "love_numbers", "text": "I love crunching numbers, statistics, and solving complex formulas", "text_hi": "मुझे हिसाब-किताब, आंकड़े और जटिल फॉर्मूले सुलझाना बहुत पसंद है", "weights": { "chartered_accountant": 3, "data_scientist": 3, "bank_po": 2 } },
+      { "id": "moderate", "text": "Moderate - I can handle practical math for daily needs and programming", "text_hi": "सामान्य - रोज़मर्रा के काम और कोडिंग लायक गणित आसानी से कर लेता हूँ", "weights": { "software_engineer": 3, "iti_polytechnic": 2 } },
+      { "id": "prefer_verbal", "text": "I prefer writing, speaking, arguments, and human interactions over numbers", "text_hi": "मुझे आंकड़ों से ज़्यादा बातचीत, तर्क-वितर्क और लिखना पसंद है", "weights": { "lawyer": 3, "teacher": 3, "civil_services_ias": 2 } },
+      { "id": "visual_hands", "text": "I prefer visual creativity and hands-on physical building", "text_hi": "मुझे विजुअल डिज़ाइन या हाथ से कोई चीज़ बनाना ज़्यादा भाता है", "weights": { "graphic_uiux_designer": 3, "iti_polytechnic": 2 } }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What is your primary financial situation & study timeline after school?",
+    "question_hi": "पढ़ाई के लिए बजट और परिवार को वित्तीय सहयोग देने की समयसीमा क्या है?",
+    "options": [
+      { "id": "urgent_earning", "text": "Need to start earning within 1-2 years with minimal course fees", "text_hi": "1-2 साल में बहुत कम खर्च में नौकरी/कमाई शुरू करना ज़रूरी है", "weights": { "iti_polytechnic": 4, "police_defence": 2 } },
+      { "id": "govt_prep", "text": "Can do 3-year standard graduation (BA/B.Sc/B.Com) alongside Govt Exam prep", "text_hi": "3 साल की सामान्य ग्रेजुएशन के साथ सरकारी नौकरी की तैयारी कर सकता हूँ", "weights": { "bank_po": 3, "civil_services_ias": 3, "teacher": 2 } },
+      { "id": "pro_degree", "text": "Can invest 4-5 years in a rigorous professional degree (B.Tech, MBBS, CA)", "text_hi": "4-5 साल तक प्रोफेशनल डिग्री (B.Tech, MBBS, CA) के लिए समर्पित रह सकता हूँ", "weights": { "doctor_mbbs": 4, "software_engineer": 3, "chartered_accountant": 3 } },
+      { "id": "skill_bootcamp", "text": "Interested in 6-12 month modern skill certifications and digital freelance", "text_hi": "6 से 12 महीने के मॉडर्न स्किल कोर्स करके फ्रीलांस या डिजिटल जॉब करना चाहता हूँ", "weights": { "digital_marketer": 3, "graphic_uiux_designer": 3 } }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "How do you prefer to spend your working day?",
+    "question_hi": "आप अपना कामकाजी दिन किस तरह बिताना पसंद करेंगे?",
+    "options": [
+      { "id": "computer_ac", "text": "In an air-conditioned room working on a laptop/computer screen", "text_hi": "लैपटॉप या कंप्यूटर पर बैठकर नया कोड, डेटा या डिज़ाइन बनाना", "weights": { "software_engineer": 3, "data_scientist": 3, "graphic_uiux_designer": 2 } },
+      { "id": "field_people", "text": "On the field, meeting diverse people, inspecting work or patrolling", "text_hi": "फील्ड में घूमना, अलग-अलग लोगों से मिलना और काम की निगरानी करना", "weights": { "police_defence": 3, "civil_services_ias": 3, "agriculture_specialist": 3 } },
+      { "id": "clinic_lab", "text": "In a hospital, clinic, diagnostic lab helping patients recover", "text_hi": "अस्पताल या क्लीनिक में मरीजों की सेवा और इलाज करना", "weights": { "doctor_mbbs": 4, "nurse_healthcare": 4 } },
+      { "id": "classroom_court", "text": "In a classroom, courtroom, or conference giving talks and mentoring", "text_hi": "क्लासरूम या कोर्टरूम में लोगों को सिखाना, बहस करना और गाइड करना", "weights": { "teacher": 4, "lawyer": 4 } }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Which of these personal strengths describes you best?",
+    "question_hi": "आपकी सबसे बड़ी खूबी या ताकत इनमें से क्या है?",
+    "options": [
+      { "id": "patience_empathy", "text": "Deep patience, empathy, caring for people in pain", "text_hi": "धैर्य, संवेदनशीलता और दूसरों के दुख-दर्द को समझना", "weights": { "nurse_healthcare": 3, "doctor_mbbs": 3, "teacher": 2 } },
+      { "id": "persuasion_debate", "text": "Persuasive communication, strong debate skills, logical arguments", "text_hi": "मजबूत बातचीत, बहस करने की कला और तार्किक समझ", "weights": { "lawyer": 4, "entrepreneur": 2, "civil_services_ias": 2 } },
+      { "id": "logical_debugging", "text": "Quick problem diagnosis, breaking big problems into smaller steps", "text_hi": "समस्या की जड़ तक पहुंचना और स्टेप-बाय-स्टेप हल निकालना", "weights": { "software_engineer": 3, "data_scientist": 3, "iti_polytechnic": 2 } },
+      { "id": "discipline_fitness", "text": "Physical stamina, mental discipline, alertness and teamwork", "text_hi": "शारीरिक फिटनेस, अनुशासन, समय की पाबंदी और टीमवर्क", "weights": { "police_defence": 4, "commercial_pilot": 2 } }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What is your appetite for competitive entrance exams?",
+    "question_hi": "प्रतियोगी परीक्षाओं (Competitive Exams) की तैयारी के प्रति आपकी क्या सोच है?",
+    "options": [
+      { "id": "extreme_prep", "text": "Ready to study 8-10 hours daily for tough national exams (UPSC, NEET, JEE)", "text_hi": "कठिन राष्ट्रीय परीक्षाओं (UPSC, NEET, JEE) के लिए 8-10 घंटे रोज़ पढ़ने को तैयार", "weights": { "civil_services_ias": 3, "doctor_mbbs": 3, "software_engineer": 2 } },
+      { "id": "moderate_mcq", "text": "Comfortable with speed-based aptitude & GK tests (SSC, Banking, Railways)", "text_hi": "स्पीड और प्रैक्टिस वाले एप्टीट्यूड व रीजनिंग टेस्ट (SSC, बैंक, रेलवे)", "weights": { "bank_po": 4, "police_defence": 2 } },
+      { "id": "portfolio_based", "text": "Prefer skill-based portfolios, interviews, and practical tests over theory exams", "text_hi": "लिखित परीक्षा से ज़्यादा प्रैक्टिकल काम, प्रोजेक्ट्स और पोर्टफोलियो दिखाना पसंद", "weights": { "graphic_uiux_designer": 4, "digital_marketer": 3, "iti_polytechnic": 3 } },
+      { "id": "direct_merit", "text": "Prefer 10th/12th merit-based admissions with minimal entrance barrier", "text_hi": "10वीं/12वीं के अंकों के आधार पर सीधे एडमिशन या वोकेशनल कोर्स", "weights": { "iti_polytechnic": 3, "nurse_healthcare": 2 } }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "How important is working near your home/village vs relocating to big metros?",
+    "question_hi": "अपने गृह राज्य/गांव के पास काम करना आपके लिए कितना महत्वपूर्ण है?",
+    "options": [
+      { "id": "near_home", "text": "Must stay close to family/district (State Govt, Local Business, Teaching)", "text_hi": "परिवार और ज़िले के पास रहना प्राथमिकता है (स्टेट गवर्मेंट, स्कूल, स्थानीय सेवा)", "weights": { "teacher": 3, "police_defence": 2, "agriculture_specialist": 3 } },
+      { "id": "metro_global", "text": "Excited to relocate to Bengaluru, Hyderabad, Delhi or even abroad", "text_hi": "बेंगलुरु, दिल्ली, मुंबई जैसे बड़े शहरों या विदेश जाने के लिए पूरी तरह तैयार", "weights": { "software_engineer": 3, "data_scientist": 3, "commercial_pilot": 3 } },
+      { "id": "pan_india", "text": "Ready for transferable postings anywhere across India", "text_hi": "पूरे भारत में कहीं भी ट्रांसफरेबल पोस्टिंग के लिए तैयार हूँ", "weights": { "civil_services_ias": 3, "bank_po": 3, "police_defence": 3 } },
+      { "id": "work_from_home", "text": "Prefer remote / work-from-home freelance options", "text_hi": "घर से ऑनलाइन या फ्रीलांस काम (Work from Home) करना चाहता हूँ", "weights": { "graphic_uiux_designer": 3, "digital_marketer": 3, "software_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What role does technology play in your daily life?",
+    "question_hi": "आपके रोज़मर्रा के जीवन में टेक्नोलॉजी का क्या रोल है?",
+    "options": [
+      { "id": "tech_creator", "text": "I want to create technology - write algorithms, train AI models", "text_hi": "मैं तकनीक बनाना चाहता हूँ - कोड लिखना, AI टूल्स ट्रेन करना", "weights": { "data_scientist": 4, "software_engineer": 3 } },
+      { "id": "tech_consumer", "text": "I use apps and tools effectively to grow business, sales, and reach", "text_hi": "सोशल मीडिया और डिजिटल टूल्स के ज़रिए मार्केटिंग और बिजनेस बढ़ाना", "weights": { "digital_marketer": 4, "entrepreneur": 2 } },
+      { "id": "tech_hardware", "text": "I like fixing motors, electrical circuits, phones, and physical machines", "text_hi": "मोटर, बिजली के उपकरण, मोबाइल और फिजिकल मशीनें रिपेयर करना", "weights": { "iti_polytechnic": 4 } },
+      { "id": "tech_basic", "text": "Just basic use for office work, emails, and document management", "text_hi": "सिर्फ सामान्य ऑफिस वर्क, फाइलिंग और ईमेल आदि के लिए", "weights": { "bank_po": 2, "civil_services_ias": 2, "lawyer": 2 } }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "What is the ultimate legacy or impact you want from your career?",
+    "question_hi": "आप अपने करियर से समाज में क्या पहचान या प्रभाव छोड़ना चाहते हैं?",
+    "options": [
+      { "id": "social_justice", "text": "Power to help the underprivileged, uphold justice and integrity", "text_hi": "कमजोर वर्ग की मदद, न्याय की रक्षा और समाज में सकारात्मक बदलाव", "weights": { "civil_services_ias": 4, "lawyer": 3, "police_defence": 3 } },
+      { "id": "innovation_wealth", "text": "High wealth creation, building world-class products and financial freedom", "text_hi": "आर्थिक आत्मनिर्भरता, नए इनोवेशन और वेल्थ क्रिएशन", "weights": { "software_engineer": 3, "entrepreneur": 4, "chartered_accountant": 2 } },
+      { "id": "saving_lives", "text": "Directly healing lives, bringing smiles to suffering families", "text_hi": "मरीजों की जान बचाना और संकट में पड़े परिवारों को नई उम्मीद देना", "weights": { "doctor_mbbs": 4, "nurse_healthcare": 3 } },
+      { "id": "nation_building", "text": "Educating the next generation and empowering youth", "text_hi": "नई पीढ़ी को शिक्षित करना और देश के युवाओं को सक्षम बनाना", "weights": { "teacher": 4, "agriculture_specialist": 3 } }
+    ]
+  }
+]

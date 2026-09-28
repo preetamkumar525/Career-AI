@@ -1,0 +1,106 @@
+{
+  "careers": [
+    {
+      "id": "software_engineer",
+      "name": "Software Engineer / AI Developer",
+      "skills": [
+        { "name": "Python / JS Programming", "category": "Technical", "requiredLevel": 90 },
+        { "name": "Data Structures & Algorithms", "category": "Analytical", "requiredLevel": 85 },
+        { "name": "Web Dev (React / Node)", "category": "Technical", "requiredLevel": 80 },
+        { "name": "Git & Open Source Collaboration", "category": "Tools", "requiredLevel": 75 },
+        { "name": "Database & SQL", "category": "Technical", "requiredLevel": 70 },
+        { "name": "Problem Solving & Logic", "category": "Analytical", "requiredLevel": 85 }
+      ],
+      "courseRecommendations": [
+        { "title": "Programming, Data Structures And Algorithms Using Python", "platform": "NPTEL (IIT Madras)", "url": "https://nptel.ac.in/courses/106106145", "duration": "8 Weeks", "free": true },
+        { "title": "CS50's Introduction to Computer Science", "platform": "Harvard (edX / YouTube)", "url": "https://cs50.harvard.edu", "duration": "10 Weeks", "free": true },
+        { "title": "Full Stack Web Development in Hindi", "platform": "CodeWithHarry (YouTube)", "url": "https://youtube.com", "duration": "Self-paced", "free": true },
+        { "title": "AI & Python Fundamentals", "platform": "Skill India Digital", "url": "https://skillindiadigital.gov.in", "duration": "4 Weeks", "free": true }
+      ]
+    },
+    {
+      "id": "data_scientist",
+      "name": "Data Scientist & AI Analyst",
+      "skills": [
+        { "name": "Python & Pandas", "category": "Technical", "requiredLevel": 90 },
+        { "name": "Statistics & Probability", "category": "Analytical", "requiredLevel": 85 },
+        { "name": "Machine Learning", "category": "Technical", "requiredLevel": 80 },
+        { "name": "SQL & Data Extraction", "category": "Technical", "requiredLevel": 80 },
+        { "name": "Data Visualization (Tableau/PowerBI)", "category": "Tools", "requiredLevel": 75 },
+        { "name": "Business Acumen", "category": "Domain", "requiredLevel": 70 }
+      ],
+      "courseRecommendations": [
+        { "title": "Data Science for Engineers", "platform": "NPTEL (IIT Madras)", "url": "https://nptel.ac.in", "duration": "8 Weeks", "free": true },
+        { "title": "Kaggle Micro Courses: Python, ML & Pandas", "platform": "Kaggle", "url": "https://kaggle.com/learn", "duration": "3 Weeks", "free": true },
+        { "title": "Power BI & SQL Masterclass in Hindi", "platform": "YouTube (Krish Naik)", "url": "https://youtube.com", "duration": "6 Weeks", "free": true }
+      ]
+    },
+    {
+      "id": "civil_services_ias",
+      "name": "Civil Services (IAS / IPS)",
+      "skills": [
+        { "name": "Indian Polity & Constitution", "category": "Domain", "requiredLevel": 95 },
+        { "name": "Current Affairs & Global Events", "category": "Domain", "requiredLevel": 90 },
+        { "name": "Mains Essay & Answer Writing", "category": "Communication", "requiredLevel": 90 },
+        { "name": "Ethics & Integrity Dilemmas", "category": "Analytical", "requiredLevel": 85 },
+        { "name": "Indian Economy & Budget", "category": "Domain", "requiredLevel": 80 },
+        { "name": "CSAT Logical Reasoning", "category": "Analytical", "requiredLevel": 75 }
+      ],
+      "courseRecommendations": [
+        { "title": "NCERT Class 6 to 12 Video Lectures", "platform": "SWAYAM Prabha Channel", "url": "https://swayam.gov.in", "duration": "Comprehensive", "free": true },
+        { "title": "Indian Polity (Laxmikanth) Chapter Analysis", "platform": "YouTube Free Series", "url": "https://youtube.com", "duration": "50 Hours", "free": true },
+        { "title": "Daily Editorial Analysis & PIB Summary", "platform": "Sansad TV & PIB", "url": "https://pib.gov.in", "duration": "Daily 30 Mins", "free": true }
+      ]
+    },
+    {
+      "id": "bank_po",
+      "name": "Bank PO (IBPS / SBI)",
+      "skills": [
+        { "name": "Quantitative Aptitude & Speed Math", "category": "Analytical", "requiredLevel": 90 },
+        { "name": "High-Level Logical Puzzles", "category": "Analytical", "requiredLevel": 90 },
+        { "name": "English Grammar & Comprehension", "category": "Communication", "requiredLevel": 80 },
+        { "name": "Banking & Financial Awareness", "category": "Domain", "requiredLevel": 85 },
+        { "name": "Computer Aptitude", "category": "Tools", "requiredLevel": 70 },
+        { "name": "Descriptive Typing", "category": "Tools", "requiredLevel": 75 }
+      ],
+      "courseRecommendations": [
+        { "title": "Complete Quantitative Aptitude for Banking", "platform": "YouTube (Adda247 / Testbook)", "url": "https://youtube.com", "duration": "8 Weeks", "free": true },
+        { "title": "RBI Monetary Policy & Banking Foundations", "platform": "SWAYAM Banking Portal", "url": "https://swayam.gov.in", "duration": "4 Weeks", "free": true }
+      ]
+    },
+    {
+      "id": "graphic_uiux_designer",
+      "name": "UI/UX & Graphic Designer",
+      "skills": [
+        { "name": "Figma & Auto Layout", "category": "Tools", "requiredLevel": 90 },
+        { "name": "User Research & Wireframing", "category": "Technical", "requiredLevel": 85 },
+        { "name": "Typography & Color Theory", "category": "Technical", "requiredLevel": 80 },
+        { "name": "Design Systems & Components", "category": "Technical", "requiredLevel": 85 },
+        { "name": "Prototyping & Micro-interactions", "category": "Tools", "requiredLevel": 75 },
+        { "name": "Client Presentation & Pitching", "category": "Communication", "requiredLevel": 70 }
+      ],
+      "courseRecommendations": [
+        { "title": "Figma for Beginners 2026", "platform": "Figma Official YouTube", "url": "https://youtube.com", "duration": "3 Weeks", "free": true },
+        { "title": "UI/UX Design Crash Course in Hindi", "platform": "YouTube (Ansh Mehra)", "url": "https://youtube.com", "duration": "4 Weeks", "free": true },
+        { "title": "Google UX Design Professional Certificate Course 1-3", "platform": "Coursera (Free Audit)", "url": "https://coursera.org", "duration": "6 Weeks", "free": true }
+      ]
+    },
+    {
+      "id": "iti_polytechnic",
+      "name": "Diploma Engineer & ITI Skilled Specialist",
+      "skills": [
+        { "name": "Circuit Diagnostics & Wiring", "category": "Technical", "requiredLevel": 90 },
+        { "name": "Engineering Drawing & Blueprints", "category": "Technical", "requiredLevel": 85 },
+        { "name": "Industrial Safety & Tool Handling", "category": "Domain", "requiredLevel": 90 },
+        { "name": "Motor & Transformer Maintenance", "category": "Technical", "requiredLevel": 80 },
+        { "name": "Basic Computer & CAD Tools", "category": "Tools", "requiredLevel": 70 },
+        { "name": "Troubleshooting & Repair", "category": "Analytical", "requiredLevel": 85 }
+      ],
+      "courseRecommendations": [
+        { "title": "Electrician & Wireman Trade Modules", "platform": "Bharat Skills (DGT Govt)", "url": "https://bharatskills.gov.in", "duration": "Self-paced", "free": true },
+        { "title": "Industrial Safety and Health", "platform": "SWAYAM (NPTEL)", "url": "https://swayam.gov.in", "duration": "4 Weeks", "free": true },
+        { "title": "AutoCAD Basic to 2D Blueprinting", "platform": "Skill India Digital", "url": "https://skillindiadigital.gov.in", "duration": "6 Weeks", "free": true }
+      ]
+    }
+  ]
+}

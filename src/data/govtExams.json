@@ -1,0 +1,490 @@
+[
+  {
+    "id": "upsc-cse",
+    "name": "UPSC Civil Services Examination (CSE)",
+    "short_name": "UPSC CSE",
+    "organizer": "Union Public Service Commission",
+    "frequency": "Once a Year (Notification in Feb, Prelims in May/June)",
+    "target_roles": ["IAS (District Magistrate)", "IPS (Superintendent of Police)", "IFS (Ambassador)", "IRS (Income Tax / Customs Commissioner)"],
+    "overview": "UPSC CSE is the premier examination in India to select administrative leadership for governing districts, enforcing national law, directing foreign diplomacy, and formulating national policy.",
+    "overview_hi": "यूपीएससी सिविल सेवा परीक्षा भारत की सबसे प्रतिष्ठित प्रतियोगी परीक्षा है, जिसके माध्यम से आईएएस, आईपीएस, आईएफएस और आईआरएस अधिकारियों का चयन होता है।",
+    "eligibility": {
+      "qualification": "Graduation in any stream (BA, B.Sc, B.Com, B.Tech, MBBS etc.) from a recognized university. Final year students can apply.",
+      "min_age": 21,
+      "max_age_general": 32,
+      "attempts_general": 6,
+      "relaxations": [
+        { "category": "OBC (Non-Creamy Layer)", "age_limit": "35 years (3 years relaxation)", "attempts": "9 attempts" },
+        { "category": "SC / ST", "age_limit": "37 years (5 years relaxation)", "attempts": "Unlimited attempts till age limit" },
+        { "category": "PwBD (Persons with Benchmark Disabilities)", "age_limit": "42 years (10 years relaxation)", "attempts": "9 attempts (Unlimited for SC/ST PwBD)" },
+        { "category": "Ex-Servicemen & ECO/SSCO", "age_limit": "Up to 5 years relaxation", "attempts": "As per category" },
+        { "category": "Women Candidates", "age_limit": "Standard category age applies + ₹0 (Nil) Application Fee" }
+      ]
+    },
+    "exam_pattern": {
+      "stages": [
+        {
+          "stage": "Stage 1: Preliminary Exam (Objective MCQ)",
+          "papers": [
+            "GS Paper 1: 100 MCQs, 200 marks, 2 hours (Merit cutoff determination)",
+            "CSAT Paper 2: 80 MCQs, 200 marks, 2 hours (Qualifying: need 33% / 66 marks)"
+          ],
+          "negative_marking": "1/3rd (0.33) marks deducted per wrong answer"
+        },
+        {
+          "stage": "Stage 2: Mains Exam (Descriptive Written - 9 Papers)",
+          "papers": [
+            "Paper A & B: Indian Language & English (300 marks each, Qualifying 25%)",
+            "Paper 1: Essay (250 marks)",
+            "Paper 2, 3, 4, 5: General Studies I, II, III, IV (250 marks each = 1,000 marks)",
+            "Paper 6 & 7: Optional Subject Paper 1 & 2 (250 marks each = 500 marks)"
+          ],
+          "total_written_marks": "1750 marks"
+        },
+        {
+          "stage": "Stage 3: Personality Test (Interview)",
+          "details": "275 marks in Dholpur House, New Delhi before an eminent board",
+          "grand_total": "2025 marks"
+        }
+      ]
+    },
+    "syllabus": {
+      "prelims": "Current events of national & international importance, History of India & Indian National Movement, Indian & World Geography, Indian Polity & Governance, Economic & Social Development, Environmental Ecology & Climate Change, General Science.",
+      "mains_gs1": "Indian Heritage, Culture, Modern History, Freedom Struggle, Post-Independence, World History, Society, Geography.",
+      "mains_gs2": "Constitution, Polity, Governance, Social Justice, Welfare Schemes, International Relations.",
+      "mains_gs3": "Economy, Agriculture, Science & Tech, Environment, Internal Security, Disaster Management.",
+      "mains_gs4": "Ethics, Integrity, Aptitude, Case Studies of administrative dilemmas."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1 - Month 3", "title": "NCERT Foundations & Syllabus Blueprint", "description": "Read NCERT Class 6-12 (History, Geography, Polity, Economy). Understand previous 10 years question trends. Choose optional subject.", "milestone": "NCERT summaries completed; Daily newspaper reading established" },
+      { "phase": "Month 4 - Month 7", "title": "Standard Reference Textbooks", "description": "M. Laxmikanth (Polity), Ramesh Singh/Nitin Singhania (Economy), Spectrum (Modern History), PMF IAS / Shankar (Environment). Start daily 1 answer writing.", "milestone": "Core static syllabus 1st reading complete" },
+      { "phase": "Month 8 - Month 10", "title": "Optional Subject & Mains Answer Writing", "description": "Complete Optional Papers 1 & 2. Write 50+ GS full-length answers and 10 essays. Integrate current affairs with static syllabus.", "milestone": "Optional syllabus covered twice with handwritten notes" },
+      { "phase": "Month 11 - Month 12", "title": "Prelims MCQ Drill & Mock Tests", "description": "Solve 40-50 full mock tests for Prelims GS-1 and CSAT. Master elimination techniques and revision of facts/maps.", "milestone": "Consistent 100+ score in mock tests; CSAT fear eliminated" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "Level 10 of 7th CPC (Basic ₹56,100 + DA + HRA/Official Bungalow)",
+      "in_hand": "₹70,000 - ₹95,000 / month (Junior Time Scale)",
+      "promotions": "Sub-Divisional Magistrate (SDM) -> District Magistrate (DM/Collector) -> Divisional Commissioner -> Joint Secretary -> Secretary to Govt of India (₹2,25,000)",
+      "perks": ["Government Bungalow with security guard & staff", "Official Vehicle with beacon/driver", "100% Medical CGHS cover for whole family", "Electricity, water, telephone quota", "Study leave abroad fully paid"]
+    },
+    "free_resources": [
+      { "title": "Official UPSC Portal (Notifications & Previous Papers)", "url": "https://upsc.gov.in", "type": "Official" },
+      { "title": "ePathshala NCERT Free E-Books (Hindi & English)", "url": "https://ncert.nic.in/textbook.php", "type": "Textbooks" },
+      { "title": "Sansad TV & PIB Official Daily Press Briefings", "url": "https://pib.gov.in", "type": "Current Affairs" }
+    ],
+    "faqs": [
+      { "q": "Can rural or Hindi medium students clear UPSC CSE?", "a": "Yes! Every year dozens of top 100 rankers come from Hindi, Marathi, and Tamil mediums. UPSC evaluates analytical understanding, not fancy English vocabulary." },
+      { "q": "Is coaching mandatory to crack UPSC?", "a": "No. With standard NCERTs, PIB, and free online lectures on YouTube/Sansad TV, thousands of aspirants clear by disciplined self-study." }
+    ]
+  },
+  {
+    "id": "ssc-cgl",
+    "name": "SSC Combined Graduate Level (SSC CGL)",
+    "short_name": "SSC CGL",
+    "organizer": "Staff Selection Commission (SSC)",
+    "frequency": "Once a Year (Notification in June/July)",
+    "target_roles": ["Income Tax Inspector (ITI)", "GST & Central Excise Inspector", "Assistant Section Officer (ASO) in MEA / CSS / Railway", "ED & CBI Sub-Inspector"],
+    "overview": "SSC CGL is India's most popular graduate exam recruiting Group B & C officers in Central Ministries, CBI, Intelligence Bureau, and Tax Directorates.",
+    "overview_hi": "केंद्रीय मंत्रालयों, इनकम टैक्स और एक्साइज में इंस्पेक्टर तथा डेस्क ऑफिसर बनने के लिए सबसे लोकप्रिय ग्रेजुएट परीक्षा।",
+    "eligibility": {
+      "qualification": "Graduation in any discipline from a recognized University.",
+      "min_age": 18,
+      "max_age_general": 30,
+      "attempts_general": "No attempt limit (as long as within age criteria)",
+      "relaxations": [
+        { "category": "OBC", "age_limit": "33 years (3 years relaxation)", "attempts": "Unlimited" },
+        { "category": "SC / ST", "age_limit": "35 years (5 years relaxation)", "attempts": "Unlimited" },
+        { "category": "PwD", "age_limit": "40 years (10 years relaxation)", "attempts": "Unlimited" },
+        { "category": "Women Candidates", "age_limit": "Standard + ₹0 application fee" }
+      ]
+    },
+    "exam_pattern": {
+      "stages": [
+        {
+          "stage": "Tier 1: Computer Based Test (CBT - Qualifying)",
+          "papers": ["General Intelligence & Reasoning (25 Qs, 50 Marks)", "General Awareness (25 Qs, 50 Marks)", "Quantitative Aptitude (25 Qs, 50 Marks)", "English Comprehension (25 Qs, 50 Marks)"],
+          "duration": "60 minutes (100 Qs, 200 Marks)",
+          "negative_marking": "0.50 marks per wrong answer"
+        },
+        {
+          "stage": "Tier 2: Final Merit Exam (Computer Based)",
+          "papers": [
+            "Section 1: Math (30 Qs) + Reasoning (30 Qs) = 180 Marks (1 hr)",
+            "Section 2: English (45 Qs) + General Awareness (25 Qs) = 210 Marks (1 hr)",
+            "Section 3: Computer Knowledge (20 Qs, 60 Marks - Qualifying)",
+            "Section 4: Data Entry Speed Test (2,000 key depressions in 15 mins - Qualifying)"
+          ],
+          "merit_basis": "390 Marks total (Section 1 + Section 2)"
+        }
+      ]
+    },
+    "syllabus": {
+      "math": "Arithmetic (Percentages, Ratio, SI/CI, Time & Work), Advance Math (Algebra, Trigonometry, Geometry, Mensuration).",
+      "reasoning": "Analogies, Syllogism, Blood Relations, Coding-Decoding, Non-verbal series, Puzzles.",
+      "english": "Grammar rules, Cloze test, Active/Passive, Direct/Indirect speech, Reading comprehension, Idioms.",
+      "gk": "History, Polity, Geography, General Science, Static GK (Folk dances, national parks), Monthly Current Affairs."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1 - Month 2", "title": "Aptitude Fundamentals & Speed Math", "description": "Learn tables up to 30, squares up to 50, cubes up to 30. Clear basic concepts of Arithmetic and Grammar rules (Neetu Singh Vol 1).", "milestone": "Foundational chapter-wise notes completed" },
+      { "phase": "Month 3 - Month 4", "title": "Advance Math & Reasoning Drill", "description": "Master Trigonometry, Geometry, and Algebra. Practice 50 reasoning questions daily. Revise NCERT Science Class 9-10.", "milestone": "Completing all 4 sections within 70 minutes" },
+      { "phase": "Month 5 - Month 6", "title": "Previous 5 Years Question Papers (PYQs) & Mocks", "description": "Solve TCS PYQ sets (Kiran or Pinnacle). Take 3 full mock tests per week with deep question-level error analysis.", "milestone": "Consistently scoring 140+ in Tier-1 Mocks and 310+ in Tier-2" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "Pay Level 7 (Basic ₹44,900) or Level 4-6 depending on post",
+      "in_hand": "₹65,000 - ₹82,000 / month (in X Cities like Delhi, Mumbai) + HRA/Quarters",
+      "promotions": "Inspector -> Superintendent -> Assistant Commissioner of Income Tax / GST",
+      "perks": ["Central Govt CGHS Medical Facility", "Government Quarters in Central Govt Enclaves", "LTC (Leave Travel Concession) all India every 2 years", "Stable desk or field enforcement duties"]
+    },
+    "free_resources": [
+      { "title": "Staff Selection Commission Official Portal", "url": "https://ssc.gov.in", "type": "Official" },
+      { "title": "TCS Previous Year Question Solved Playlists", "url": "https://youtube.com", "type": "Free Solved Sets" },
+      { "title": "Free Daily Typing Practice Portal", "url": "https://typingstudy.com", "type": "Skill Practice" }
+    ],
+    "faqs": [
+      { "q": "Is interview conducted in SSC CGL?", "a": "No! Interviews have been abolished for all SSC CGL Group B & C posts. Selection is 100% based on Tier-2 CBT computer test marks." }
+    ]
+  },
+  {
+    "id": "ibps-po",
+    "name": "IBPS Probationary Officer (IBPS PO)",
+    "short_name": "IBPS PO",
+    "organizer": "Institute of Banking Personnel Selection",
+    "frequency": "Once a Year (August-November)",
+    "target_roles": ["Probationary Officer (PO)", "Management Trainee", "Assistant Branch Manager"],
+    "overview": "IBPS recruits probationary officers across 11 nationalized public sector banks (PNB, Canara, Bank of Baroda, Union Bank, etc.) with fixed exam calendars.",
+    "overview_hi": "11 प्रमुख सरकारी बैंकों में प्रोबेशनरी ऑफिसर (PO) भर्ती। 6 महीने में चयन प्रक्रिया पूरी होने वाली सबसे तेज़ परीक्षा।",
+    "eligibility": {
+      "qualification": "Graduation in any discipline.",
+      "min_age": 20,
+      "max_age_general": 30,
+      "attempts_general": "No restriction",
+      "relaxations": [
+        { "category": "OBC", "age_limit": "33 years", "attempts": "Unlimited" },
+        { "category": "SC / ST", "age_limit": "35 years", "attempts": "Unlimited" },
+        { "category": "PwD", "age_limit": "40 years", "attempts": "Unlimited" }
+      ]
+    },
+    "exam_pattern": {
+      "stages": [
+        {
+          "stage": "Prelims: Online Speed Test",
+          "papers": ["English (30 Qs, 20 mins)", "Quantitative Aptitude (35 Qs, 20 mins)", "Reasoning Ability (35 Qs, 20 mins)"],
+          "duration": "60 mins (100 Qs, 100 Marks) with sectional timing"
+        },
+        {
+          "stage": "Mains: Objective + Descriptive Test",
+          "papers": ["Reasoning & Computer (45 Qs, 60 Marks)", "General / Economy / Banking Awareness (40 Qs, 40 Marks)", "English Language (35 Qs, 40 Marks)", "Data Analysis & Interpretation (35 Qs, 60 Marks)", "Descriptive: 1 Essay + 1 Letter typing (25 Marks)"],
+          "duration": "3.5 Hours (225 Marks total)"
+        },
+        {
+          "stage": "Interview",
+          "details": "100 marks panel interview in respective regional zonal office"
+        }
+      ]
+    },
+    "syllabus": {
+      "prelims": "Number series, Simplification, Quadratic equations, Data Interpretation, Syllogisms, Seating arrangement, Puzzles, Reading comprehension, Para jumbles.",
+      "mains": "Advanced DI (Caselet, Radar, Missing DI), High-level circular & floor puzzles, RBI Monetary policy, Priority Sector Lending (PSL), Union Budget, Financial news."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1 - Month 2", "title": "Speed Techniques & High-Speed Calculation", "description": "Practice 50 Simplification, 20 Quadratic, 20 Number Series questions every single morning. Build speed on calculations.", "milestone": "Solving DI sets in under 4 minutes" },
+      { "phase": "Month 3 - Month 4", "title": "Complex Puzzles & Mains DI Drill", "description": "Practice 5 uncertain puzzles daily. Learn Caselet DI and Probability. Read Indian Express / The Hindu Business page.", "milestone": "Clearing sectional cutoffs in Mains practice mocks" },
+      { "phase": "Month 5", "title": "Banking Awareness Capsule & Mock Test Marathon", "description": "Memorize RBI circulars, banking terms, current affairs of past 6 months. Take 20 Prelims + 10 Mains full-length mocks.", "milestone": "Prelims percentile above 92%" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "Basic ₹36,000 + DA + Special Allowance + HRA (Revised under 12th BPS to ₹48,480 Basic)",
+      "in_hand": "₹60,000 - ₹75,000 / month",
+      "promotions": "Scale 1 (PO) -> Scale 2 (Manager) -> Scale 3 (Senior Manager) -> Scale 4 (Chief Manager) -> AGM -> DGM -> General Manager",
+      "perks": ["Leased accommodation up to ₹25,000/mo depending on city", "Subsidized staff home loan at ~4-5% interest", "Newspaper, petrol allowance (50-60 litres/mo), medical reimbursement"]
+    },
+    "free_resources": [
+      { "title": "IBPS Official Portal", "url": "https://ibps.in", "type": "Official" },
+      { "title": "RBI FAQs on Monetary Policy & Banking Terms", "url": "https://rbi.org.in", "type": "Official Study Bank" }
+    ],
+    "faqs": [
+      { "q": "How fast is IBPS recruitment?", "a": "IBPS is known for the most punctual recruitment in India. From Prelims in October to joining letter in April, it strictly takes only 6 months." }
+    ]
+  },
+  {
+    "id": "sbi-po",
+    "name": "State Bank of India Probationary Officer (SBI PO)",
+    "short_name": "SBI PO",
+    "organizer": "State Bank of India Central Recruitment Board",
+    "frequency": "Once a Year (September-December)",
+    "target_roles": ["SBI Probationary Officer", "Deputy Manager", "Branch Head"],
+    "overview": "SBI PO is the pinnacle of Indian banking careers. Offers the highest compensation package in public banking with international branch postings.",
+    "overview_hi": "भारत के सबसे बड़े सरकारी बैंक (SBI) में ऑफिसर बनने की प्रतिष्ठित परीक्षा। बेहतरीन वेतन और विदेश में पोस्टिंग के मौके।",
+    "eligibility": {
+      "qualification": "Graduation in any discipline.",
+      "min_age": 21,
+      "max_age_general": 30,
+      "attempts_general": "4 attempts (General)",
+      "relaxations": [
+        { "category": "OBC", "age_limit": "33 years", "attempts": "7 attempts" },
+        { "category": "SC / ST", "age_limit": "35 years", "attempts": "No limit" },
+        { "category": "PwD", "age_limit": "40 years", "attempts": "7 attempts (OBC) / No limit (SC/ST)" }
+      ]
+    },
+    "exam_pattern": {
+      "stages": [
+        { "stage": "Phase 1: Prelims CBT", "papers": ["English (30 Qs)", "Quantitative Aptitude (35 Qs)", "Reasoning (35 Qs)"], "duration": "60 mins (100 Marks)" },
+        { "stage": "Phase 2: Mains Exam + Descriptive", "papers": ["Objective (200 Marks, 3 hrs)", "Descriptive English Typing (50 Marks, 30 mins)"], "duration": "3.5 hrs (250 Marks)" },
+        { "stage": "Phase 3: Psychometric Test + Group Discussion (20 Marks) + Personal Interview (30 Marks)", "details": "50 Marks final evaluation" }
+      ]
+    },
+    "syllabus": {
+      "prelims": "Speed Math, Arithmetic, Logical Puzzles, Coding-Decoding, Reading comprehension, Vocabulary in context.",
+      "mains": "Tough DI (Probability DI, Funnel DI), Critical Reasoning (Assumption, Inference), Financial GK, IT in Banking."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1 - Month 2", "title": "Speed Foundation & High Level Concepts", "description": "Master all Arithmetic topics. Practice critical reasoning logic. Improve descriptive typing speed on computer.", "milestone": "30 WPM typing speed achieved" },
+      { "phase": "Month 3 - Month 4", "title": "Tough Mock Tests & GD Practice", "description": "Solve toughest SBI PO previous papers. Practice speaking on current economic issues for Group Discussion round.", "milestone": "Confident group discussion skills" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "4 advance increments given to SBI POs directly at joining",
+      "in_hand": "₹75,000 - ₹85,000 / month + Leased accommodation (up to ₹30,000 in Mumbai)",
+      "promotions": "Rapid promotion track: Scale I to Scale IV achievable in 9 years",
+      "perks": ["Foreign posting opportunities in London, New York, Singapore branches", "Concessional loans for car, house, personal needs", "Highest medical cover 100% cashless"]
+    },
+    "free_resources": [
+      { "title": "SBI Careers Official Portal", "url": "https://sbi.co.in/careers", "type": "Official" }
+    ],
+    "faqs": [
+      { "q": "What is the difference between SBI PO and IBPS PO?", "a": "SBI PO gives 4 advance increments resulting in ~₹10,000-15,000 higher monthly compensation than regular IBPS POs." }
+    ]
+  },
+  {
+    "id": "rrb-ntpc",
+    "name": "Railway Non-Technical Popular Categories (RRB NTPC)",
+    "short_name": "RRB NTPC",
+    "organizer": "Railway Recruitment Boards (Ministry of Railways)",
+    "frequency": "Periodic National Notification",
+    "target_roles": ["Station Master", "Goods Guard (Train Manager)", "Commercial Apprentice", "Senior Clerk cum Typist", "Junior Clerk"],
+    "overview": "Massive Indian Railways recruitment for operational and administrative posts with lifetime railway family travel passes across India.",
+    "overview_hi": "भारतीय रेलवे में स्टेशन मास्टर, गुड्स गार्ड (ट्रेन मैनेजर) और लिपिक बनने का सबसे बड़ा अवसर। पूरे भारत में फ्री रेल पास।",
+    "eligibility": {
+      "qualification": "12th Pass for Undergraduate posts (Level 2 & 3); Graduate for Level 4, 5, 6 posts (Station Master, Goods Guard).",
+      "min_age": 18,
+      "max_age_general": 33,
+      "attempts_general": "No restriction",
+      "relaxations": [
+        { "category": "OBC", "age_limit": "36 years", "attempts": "Unlimited" },
+        { "category": "SC / ST", "age_limit": "38 years", "attempts": "Unlimited" },
+        { "category": "PwD", "age_limit": "43 years", "attempts": "Unlimited" }
+      ]
+    },
+    "exam_pattern": {
+      "stages": [
+        { "stage": "CBT 1 (Screening Test)", "papers": ["General Awareness (40 Qs)", "Mathematics (30 Qs)", "General Intelligence & Reasoning (30 Qs)"], "duration": "90 mins (100 Qs, 100 Marks)" },
+        { "stage": "CBT 2 (Merit Test)", "papers": ["General Awareness (50 Qs)", "Mathematics (35 Qs)", "General Intelligence & Reasoning (35 Qs)"], "duration": "90 mins (120 Qs, 120 Marks)" },
+        { "stage": "CBAT / Typing Skill Test", "details": "Computer Based Aptitude Test (Psychology test) for Station Master; Typing Test for Clerks" }
+      ]
+    },
+    "syllabus": {
+      "math": "Number System, Decimals, Fractions, LCM, HCF, Ratio, Percentages, Mensuration, Time and Work, Simple Interest, Geometry, Elementary Statistics.",
+      "reasoning": "Analogies, Completion of Number and Alphabetical Series, Coding and Decoding, Mathematical Operations, Similarities, Syllogism, Venn Diagrams.",
+      "ga": "Current Events, Games and Sports, Art and Culture of India, Indian Literature, Monuments and Places of India, General Science (up to 10th CBSE), Indian Polity."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1 - Month 2", "title": "NCERT Science & Railway GK Mastery", "description": "Master Class 9 & 10 Physics, Chemistry, Biology concepts (heavily asked by RRB). Practice speed math arithmetic.", "milestone": "All formula sheets prepared" },
+      { "phase": "Month 3 - Month 4", "title": "CBT-2 Level Problem Solving & Mock Tests", "description": "Practice 120-question sets in 90 minutes. Focus on high accuracy (negative marking is 1/3rd).", "milestone": "Mock accuracy above 88%" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "Level 2 (₹19,900) up to Level 6 (₹35,400 Basic)",
+      "in_hand": "₹32,000 (Clerk) to ₹65,000+ (Station Master / Goods Guard with running allowances)",
+      "promotions": "Station Master -> Station Superintendent -> Assistant Operating Manager (AOM)",
+      "perks": ["Free 1st Class Railway Family Passes for pan-India travel", "Railway Quarters and dedicated Railway Hospitals", "Subsidized holiday homes across all tourist locations in India"]
+    },
+    "free_resources": [
+      { "title": "Indian Railways Official Recruitment Portal", "url": "https://indianrailways.gov.in", "type": "Official" }
+    ],
+    "faqs": [
+      { "q": "Do Goods Guards and Station Masters get extra allowances?", "a": "Yes! Running allowances, night duty allowances, and national holiday allowances add ₹15,000 - ₹25,000 extra on top of basic salary." }
+    ]
+  },
+  {
+    "id": "nda-cds",
+    "name": "NDA & CDS Defence Officers (Army / Navy / Air Force)",
+    "short_name": "NDA / CDS",
+    "organizer": "Union Public Service Commission (UPSC)",
+    "frequency": "Twice a Year (NDA I & II, CDS I & II)",
+    "target_roles": ["Lieutenant (Indian Army)", "Sub-Lieutenant (Indian Navy)", "Flying Officer (Indian Air Force)"],
+    "overview": "Prestigious gateway to commissioning as a gazetted military officer directly after 12th (NDA) or after graduation (CDS). Completely free 4-year degree with stipend.",
+    "overview_hi": "12वीं के बाद (NDA) या ग्रेजुएशन के बाद (CDS) सेना में क्लास-1 ऑफिसर (लेफ्टिनेंट) बनने का सबसे गौरवशाली मार्ग।",
+    "eligibility": {
+      "qualification": "12th Pass for NDA (PCM mandatory for Navy & Air Force; Any stream for Army). Graduation for CDS.",
+      "min_age": 16.5,
+      "max_age_general": 19.5,
+      "attempts_general": "As long as age permits",
+      "relaxations": [
+        { "category": "Women Candidates", "age_limit": "Now 100% eligible for NDA & CDS with equal permanent commission opportunities" }
+      ]
+    },
+    "exam_pattern": {
+      "stages": [
+        { "stage": "Stage 1: UPSC Written Exam", "papers": ["Maths (300 Marks, 2.5 hrs)", "General Ability Test - English 200 + GK 400 (600 Marks, 2.5 hrs)"], "duration": "900 Marks total" },
+        { "stage": "Stage 2: SSB Interview (Services Selection Board)", "papers": ["Day 1: Screening (OIR + PPDT)", "Day 2: Psychology Tests (TAT, WAT, SRT, SD)", "Day 3-4: GTO Outdoor Tasks", "Day 5: Final Board Conference"], "duration": "5 Days comprehensive assessment (900 Marks)" }
+      ]
+    },
+    "syllabus": {
+      "math": "11th & 12th Mathematics: Trigonometry, Matrices, Determinants, Calculus, Coordinate Geometry, Vectors, Statistics & Probability.",
+      "gat": "English Grammar, Comprehension, Indian Freedom Struggle, Geography, Physics, Chemistry, Biology, Current Defence exercises."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1 - Month 3", "title": "11th-12th Math Formulas & English Grammar", "description": "Solve RD Sharma Objective / Pathfinder for NDA. Read English newspapers daily to build vocabulary for GAT.", "milestone": "Clearing Math cutoff of 25% comfortably" },
+      { "phase": "Month 4 - Month 5", "title": "Physical Fitness & SSB Personality Grooming", "description": "Daily 2.4 km running, 20 pushups, 10 pullups. Practice Stage-1 PPDT story writing and lecturette topics.", "milestone": "High physical stamina and OLQ (Officer Like Qualities) confidence" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "Level 10 (Basic ₹56,100 + Military Service Pay ₹15,500 = ₹71,600 starting)",
+      "in_hand": "₹90,000 - ₹1,15,000 / month + Free accommodation, mess, orderly",
+      "promotions": "Lieutenant -> Captain (2 yrs) -> Major (6 yrs) -> Lt Colonel (13 yrs) -> Colonel -> Brigadier -> Major General",
+      "perks": ["Army Officers Mess & Club membership", "Canteen Stores Department (CSD) tax-free amenities", "Military Hospital 100% free treatment for officer and parents", "Immense national respect and honor"]
+    },
+    "free_resources": [
+      { "title": "Join Indian Army Official Portal", "url": "https://joinindianarmy.nic.in", "type": "Official" },
+      { "title": "Pathfinder Previous Years Question Walkthroughs", "url": "https://youtube.com", "type": "Free Lectures" }
+    ],
+    "faqs": [
+      { "q": "Are girls eligible for NDA?", "a": "Yes! Following the Supreme Court ruling, female candidates are fully eligible for NDA and train alongside male cadets at Khadakwasla." }
+    ]
+  },
+  {
+    "id": "ctet-tet",
+    "name": "CTET & State Teacher Eligibility Tests (TET)",
+    "short_name": "CTET / TET",
+    "organizer": "Central Board of Secondary Education (CBSE) / State Exam Boards",
+    "frequency": "Twice a Year (July & December)",
+    "target_roles": ["Primary Teacher (PRT - Classes 1 to 5)", "Trained Graduate Teacher (TGT - Classes 6 to 8)", "KVS / NVS / DSSSB Teacher"],
+    "overview": "Mandatory qualifying credential for securing government teaching appointments in Central Govt Schools (Kendriya Vidyalaya, Navodaya) and State Govt Schools.",
+    "overview_hi": "केंद्रीय विद्यालय (KVS), नवोदय (NVS) और राज्य सरकारी स्कूलों में सरकारी शिक्षक बनने के लिए अनिवार्य पात्रता परीक्षा।",
+    "eligibility": {
+      "qualification": "Paper 1 (PRT): 12th + D.El.Ed (or B.El.Ed); Paper 2 (TGT): Graduation + B.Ed or 4-yr integrated teacher course.",
+      "min_age": 18,
+      "max_age_general": "No upper age limit for CTET eligibility certificate!",
+      "attempts_general": "Unlimited attempts. Certificate is valid for LIFETIME."
+    },
+    "exam_pattern": {
+      "stages": [
+        { "stage": "Paper 1 (Class 1 to 5)", "papers": ["Child Development & Pedagogy (30 Qs)", "Language 1 (30 Qs)", "Language 2 (30 Qs)", "Mathematics (30 Qs)", "Environmental Studies EVS (30 Qs)"], "duration": "150 Qs, 150 Marks, 2.5 hrs. No negative marking!" },
+        { "stage": "Paper 2 (Class 6 to 8)", "papers": ["Child Development & Pedagogy (30 Qs)", "Language 1 (30 Qs)", "Language 2 (30 Qs)", "Maths & Science OR Social Studies (60 Qs)"], "duration": "150 Qs, 150 Marks, 2.5 hrs. No negative marking!" }
+      ]
+    },
+    "syllabus": {
+      "pedagogy": "Theories of Piaget, Kohlberg, Vygotsky, Inclusive Education, Constructivist learning principles, Diagnostic & Remedial teaching.",
+      "evs_science": "NCERT Class 3 to 8 textbooks content on Family, Food, Shelter, Water, Travel, Things we make and do."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1", "title": "Child Development & Learning Theories", "description": "Master Piaget, Vygotsky and Kohlberg theories with NCERT B.Ed books.", "milestone": "25+ marks consistency in CDP section" },
+      { "phase": "Month 2", "title": "NCERT 3rd to 8th Subject Revision & PYQ Mocks", "description": "Read all NCERT EVS and Social Science books. Solve last 10 CTET papers.", "milestone": "Scoring 110+ out of 150 comfortably" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "PRT: Pay Level 6 (₹35,400 Basic); TGT: Level 7 (₹44,900 Basic)",
+      "in_hand": "₹45,000 - ₹68,000 / month (KVS/NVS/Govt Schools)",
+      "promotions": "PRT -> TGT -> PGT (Lecturer) -> Vice Principal -> Principal",
+      "perks": ["60-70 days summer & winter vacations paid", "Safe 8 AM - 2 PM timing allowing family care", "Free school education for own children in Kendriya Vidyalaya"]
+    },
+    "free_resources": [
+      { "title": "CTET Official Portal (Question Papers & Answer Keys)", "url": "https://ctet.nic.in", "type": "Official" },
+      { "title": "DIKSHA Portal Free NCERT Teacher Modules", "url": "https://diksha.gov.in", "type": "Govt Training" }
+    ],
+    "faqs": [
+      { "q": "What is the validity of CTET certificate?", "a": "CBSE has made CTET certificate valid for LIFETIME. Once qualified, you can apply for KVS/DSSSB recruitment anytime." }
+    ]
+  },
+  {
+    "id": "state-psc",
+    "name": "State Public Service Commissions (UPPSC / BPSC / MPPSC / RAS)",
+    "short_name": "State PSC",
+    "organizer": "Respective State Public Service Commission",
+    "frequency": "Annually or Biennially",
+    "target_roles": ["Sub-Divisional Magistrate (SDM)", "Deputy Superintendent of Police (DSP)", "Block Development Officer (BDO)", "Commercial Tax Officer (CTO)"],
+    "overview": "Premier state government administrative recruitment exam selecting top executive officers for district and block level administration within the home state.",
+    "overview_hi": "अपने गृह राज्य में एसडीएम (SDM), डीएसपी (DSP), बीडीओ (BDO) बनने की सर्वोच्च राज्य प्रशासनिक परीक्षा।",
+    "eligibility": {
+      "qualification": "Graduation in any stream.",
+      "min_age": 21,
+      "max_age_general": 40,
+      "attempts_general": "Unlimited till upper age limit",
+      "relaxations": [
+        { "category": "OBC of home state", "age_limit": "43-45 years", "attempts": "Unlimited" },
+        { "category": "SC / ST of home state", "age_limit": "45 years", "attempts": "Unlimited" },
+        { "category": "State Domicile Women", "age_limit": "Up to 45 years in states like UP, Rajasthan, Bihar" }
+      ]
+    },
+    "exam_pattern": {
+      "stages": [
+        { "stage": "Prelims (Objective CBT/OMR)", "papers": ["General Studies 1 (150 Qs, 200 Marks)", "CSAT Aptitude 2 (100 Qs, 200 Marks - Qualifying 33%)"], "duration": "4 hours total" },
+        { "stage": "Mains (Subjective Written)", "papers": ["General Hindi (150 Marks)", "Essay (150 Marks)", "General Studies Papers 1 to 6 (including 2 dedicated State Special Papers)"], "duration": "1500 Marks total" },
+        { "stage": "Interview", "details": "100 Marks personality evaluation before State Board" }
+      ]
+    },
+    "syllabus": {
+      "state_special": "State History, Geography, Culture, Folk Art, Tribal heritage, State Budget, State Welfare schemes, Mineral resources, Industrial corridors.",
+      "general": "Indian Constitution, Modern History, Macroeconomics, Ethics & Administration."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1 - Month 3", "title": "State History, Culture & Geography Specialization", "description": "Read comprehensive State Special GK books (e.g. Drishti UP Special, Crown Bihar GK). Learn local dialects and state economy.", "milestone": "Full notes on state geography and heritage ready" },
+      { "phase": "Month 4 - Month 7", "title": "GS 1-4 and State Mains Answer Writing", "description": "Write answers with state-specific examples and data points. Focus on Hindi grammar for 100+ marks in Hindi paper.", "milestone": "100+ answers evaluated" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "Pay Level 10 (Basic ₹56,100) to Level 12",
+      "in_hand": "₹68,000 - ₹88,000 / month + Official vehicle with driver & government bungalow",
+      "promotions": "SDM -> Additional District Magistrate (ADM) -> Promoted to IAS cadre in 12-16 years!",
+      "perks": ["Highest local authority in the tehsil/district", "Security guard and official residence", "Power to pass administrative orders and supervise local police"]
+    },
+    "free_resources": [
+      { "title": "State Commission Official Website", "url": "https://uppsc.up.nic.in", "type": "Official" }
+    ],
+    "faqs": [
+      { "q": "Can a State PSC officer be promoted to IAS?", "a": "Yes! Around 33% of all IAS cadre posts in every state are reserved for promotion of State Civil Service (SDM) officers." }
+    ]
+  },
+  {
+    "id": "state-police",
+    "name": "State Police Sub-Inspector & Constable Exam",
+    "short_name": "State Police SI / Constable",
+    "organizer": "State Police Recruitment and Promotion Board",
+    "frequency": "Periodic State Notifications",
+    "target_roles": ["Police Sub-Inspector (SI - 2 Stars)", "Platoon Commander (PAC)", "Civil Police Constable", "Fire Service Officer"],
+    "overview": "Most sought-after state uniform recruitment with huge vacancies (10,000 to 60,000 posts per cycle) ensuring fast local government employment.",
+    "overview_hi": "राज्य पुलिस में दारोगा (SI) और सिपाही पद। हज़ारों पदों की भर्ती, वर्दी का सम्मान और स्थानीय इलाके में तैनाती।",
+    "eligibility": {
+      "qualification": "12th Pass for Constable; Graduation for Sub-Inspector (SI).",
+      "min_age": 18,
+      "max_age_general": 25,
+      "attempts_general": "No restriction within age",
+      "relaxations": [
+        { "category": "OBC / SC / ST of home state", "age_limit": "Up to 30 years (5 years relaxation)", "attempts": "Unlimited" },
+        { "category": "Physical Standards", "age_limit": "Male Height: 168 cm, Chest 79-84 cm; Female Height: 152 cm; 4.8 km run in 25 mins" }
+      ]
+    },
+    "exam_pattern": {
+      "stages": [
+        { "stage": "Stage 1: Written Examination (OMR / CBT)", "papers": ["General Hindi (100 Marks)", "Law & Constitution / General Knowledge (100 Marks)", "Numerical & Mental Ability (100 Marks)", "Mental Aptitude / IQ / Reasoning (100 Marks)"], "duration": "400 Marks, 2 Hours (160 Qs)" },
+        { "stage": "Stage 2: Physical Standard Test (PST) & Document Verification", "details": "Height and chest measurement verification" },
+        { "stage": "Stage 3: Physical Efficiency Test (PET)", "details": "Male: 4.8 km running in 28 mins; Female: 2.4 km running in 16 mins" }
+      ]
+    },
+    "syllabus": {
+      "law_constitution": "Indian Constitution, Fundamental Rights, Directive Principles, Traffic Rules, Women & Child Protection Acts, Cyber Crime basics, Human Rights.",
+      "hindi": "Hindi grammar, Sandhi, Samas, Ras, Chhand, Alankar, Muhavare, Famous Hindi poets and awards.",
+      "math_reasoning": "Number system, Percentages, Ratio, Distance, Series, Coding, Logical deductions."
+    },
+    "roadmap_timeline": [
+      { "phase": "Month 1 - Month 2", "title": "Physical Fitness Training & Hindi Grammar", "description": "Start morning running routine (3-5 km). Master Hindi grammar (100 marks out of 400). Learn key articles of the Constitution.", "milestone": "Able to run 5 km without exhaustion; Hindi score 80%+" },
+      { "phase": "Month 3 - Month 4", "title": "Full Mocks & Speed Accuracy Drill", "description": "Solve 30 full-length practice sets with timer. Focus on accuracy to avoid negative marks.", "milestone": "Scoring 300+ out of 400 in mock tests" }
+    ],
+    "salary_and_perks": {
+      "pay_scale": "Constable: Level 3 (₹21,700 Basic); SI: Level 6 (₹35,400 Basic)",
+      "in_hand": "Constable: ₹32,000 - ₹38,000; Sub-Inspector: ₹48,000 - ₹60,000 / month",
+      "promotions": "Constable -> Head Constable -> Assistant Sub Inspector (ASI) -> Sub-Inspector (SI) -> Inspector",
+      "perks": ["Uniform allowance, ration money allowance (₹3,000/mo extra)", "Police family welfare health facilities", "Direct jurisdiction in Thana and investigative authority"]
+    },
+    "free_resources": [
+      { "title": "State Police Recruitment Board Portal", "url": "https://uppbpb.gov.in", "type": "Official" }
+    ],
+    "faqs": [
+      { "q": "What happens if someone fails the running test?", "a": "Running test is strictly qualifying. Even if you score top marks in written exam, failure to complete running within time leads to immediate disqualification." }
+    ]
+  }
+]

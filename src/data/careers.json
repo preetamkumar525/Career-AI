@@ -1,0 +1,469 @@
+[
+  {
+    "id": "civil_services_ias",
+    "title": "Civil Services (IAS / IPS / IFS)",
+    "title_hi": "भारतीय प्रशासनिक सेवा (IAS / IPS)",
+    "category": "govt",
+    "stream": "12th Arts",
+    "eligible_streams": ["12th Arts", "12th Science (PCM)", "12th Science (PCB)", "12th Commerce"],
+    "summary": "India's highest administrative service with direct policy power, district governance, and societal impact.",
+    "summary_hi": "भारत की सर्वोच्च प्रशासनिक सेवा, जिसमें ज़िला प्रशासन, जन-कल्याणकारी नीतियां और विशाल सामाजिक प्रभाव शामिल है।",
+    "salary_range": "₹56,100 - ₹2,50,000 / month + Perks & Official Residence",
+    "duration": "Graduation (3-4 yrs) + 1-2 yrs Exam Prep",
+    "difficulty": "Very High",
+    "future_demand": "High & Prestigious",
+    "education_path": "10+2 (Any Stream) -> Graduation (BA/B.Sc/B.Com/B.Tech) -> UPSC Civil Services Examination",
+    "entrance_exams": ["UPSC CSE (Prelims, Mains, Interview)", "State PSC (UPPSC, BPSC, MPPSC)"],
+    "top_colleges": ["Any UGC-recognized University", "DU", "JNU", "BHU", "State Central Universities"],
+    "skills_needed": ["Analytical Reasoning", "Current Affairs & GK", "Ethics & Integrity", "Public Administration", "Decision Making", "Essay & Answer Writing"],
+    "parent_view": {
+      "cost_range": "Low to Moderate (Govt college: ₹10k - ₹50k total; self-study or standard coaching ₹30k - ₹1L)",
+      "safety_level": "Highest (Z-category / official security for senior officers)",
+      "job_security_score": 10,
+      "roi_timeline": "Lifelong prestige, pension benefits, government accommodation, and medical cover",
+      "parent_tip": "Graduation can be done in any low-cost college while preparing for UPSC. Minimum degree cost."
+    },
+    "free_resources": [
+      { "title": "UPSC Official Question Papers", "url": "https://upsc.gov.in", "type": "Govt Portal" },
+      { "title": "NCERT Books Free PDF (Class 6-12)", "url": "https://ncert.nic.in/textbook.php", "type": "Core Foundation" },
+      { "title": "Sansad TV Debates (Perspectives)", "url": "https://youtube.com", "type": "Free Video Lectures" }
+    ]
+  },
+  {
+    "id": "software_engineer",
+    "title": "Software Engineer / AI Developer",
+    "title_hi": "सॉफ्टवेयर इंजीनियर / AI डेवलपर",
+    "category": "private",
+    "stream": "12th Science (PCM)",
+    "eligible_streams": ["12th Science (PCM)", "12th Commerce", "12th Arts"],
+    "summary": "Build mobile apps, enterprise cloud platforms, and generative AI systems with rapid international salary growth.",
+    "summary_hi": "वेबसाइट, मोबाइल ऐप्स और AI सिस्टम बनाएं। बेहतरीन सैलरी और वर्क-फ्रॉम-होम के अवसर।",
+    "salary_range": "₹4.5 LPA - ₹35+ LPA (Mid/Senior: ₹20-60 LPA)",
+    "duration": "3 to 4 years (B.Tech / BCA / Self-taught)",
+    "difficulty": "Moderate to High",
+    "future_demand": "Extremely High (AI boom)",
+    "education_path": "12th PCM -> B.Tech CSE / IT or BCA + MCA or Modern Full-Stack Bootcamps",
+    "entrance_exams": ["JEE Main", "JEE Advanced", "BITSAT", "State CETs", "NIMCET"],
+    "top_colleges": ["IITs", "NITs", "IIITs", "BITS Pilani", "Top State Govt Engineering Colleges"],
+    "skills_needed": ["Python / JavaScript", "Data Structures & Algorithms", "Full Stack Web Dev", "Database Management", "Git & Problem Solving", "Cloud & AI APIs"],
+    "parent_view": {
+      "cost_range": "Govt Engineering: ₹2L - ₹6L total; Private: ₹6L - ₹15L (High education loan approval rate)",
+      "safety_level": "Safe desk/remote office environment",
+      "job_security_score": 8,
+      "roi_timeline": "Fastest recovery: 1-3 years after graduation; high starting packages",
+      "parent_tip": "Skills matter more than college degree. Students can learn coding free on YouTube and get high-paying remote jobs."
+    },
+    "free_resources": [
+      { "title": "CS50 Introduction to Computer Science (Harvard/edX)", "url": "https://cs50.harvard.edu", "type": "Online Course" },
+      { "title": "freeCodeCamp Hindi & English Coding Tutorials", "url": "https://freecodecamp.org", "type": "Hands-on Practice" },
+      { "title": "NPTEL Programming in Python (IIT Madras)", "url": "https://nptel.ac.in", "type": "Govt Recognized" }
+    ]
+  },
+  {
+    "id": "doctor_mbbs",
+    "title": "Medical Doctor (MBBS / AYUSH)",
+    "title_hi": "डॉक्टर (MBBS / बीएएमएस)",
+    "category": "professional",
+    "stream": "12th Science (PCB)",
+    "eligible_streams": ["12th Science (PCB)"],
+    "summary": "Heal illnesses, perform surgeries, and safeguard community healthcare with immense social respect.",
+    "summary_hi": "मरीजों का इलाज, समाज में सर्वोच्च आदर और संकट के समय जीवनदान देने वाला नोबेल पेशा।",
+    "salary_range": "₹60,000 - ₹2,50,000+ / month (Private Practice: Unlimited)",
+    "duration": "5.5 years (including 1 yr internship)",
+    "difficulty": "Very High",
+    "future_demand": "Guaranteed Lifetime Demand",
+    "education_path": "10+2 with PCB (minimum 50%) -> NEET UG -> MBBS -> NEET PG for MD/MS specialization",
+    "entrance_exams": ["NEET-UG (National Eligibility cum Entrance Test)"],
+    "top_colleges": ["AIIMS New Delhi", "CMC Vellore", "JIPMER", "King George Medical University", "Govt Medical Colleges"],
+    "skills_needed": ["Clinical Diagnosis", "Patient Empathy", "Human Anatomy", "Surgical Precision", "Crisis Management", "Pharmacology"],
+    "parent_view": {
+      "cost_range": "Govt Medical College: ₹50k - ₹2L total; Private: ₹50L - ₹1Cr (Target Govt seats via NEET)",
+      "safety_level": "High (Hospital & Clinical environments)",
+      "job_security_score": 10,
+      "roi_timeline": "Long-term investment: Steady earnings start after 5.5 years internship",
+      "parent_tip": "Target Government Medical Colleges via NEET where fees are subsidized by Govt up to 90%."
+    },
+    "free_resources": [
+      { "title": "SWAYAM Medical Biotechnology & Anatomy", "url": "https://swayam.gov.in", "type": "Ministry of Education" },
+      { "title": "Khan Academy Medicine & Healthcare", "url": "https://khanacademy.org", "type": "Interactive Theory" }
+    ]
+  },
+  {
+    "id": "chartered_accountant",
+    "title": "Chartered Accountant (CA)",
+    "title_hi": "चार्टर्ड अकाउंटेंट (CA)",
+    "category": "professional",
+    "stream": "12th Commerce",
+    "eligible_streams": ["12th Commerce", "12th Science (PCM)", "12th Arts"],
+    "summary": "Audit national corporate books, lead tax planning, corporate finance, and insolvency advisory.",
+    "summary_hi": "वित्तीय ऑडिटिंग, टैक्स प्लानिंग और कंपनियों के मुख्य वित्तीय सलाहकार (CFO) बनने का रास्ता।",
+    "salary_range": "₹7 LPA - ₹25+ LPA (Self practice has high scalability)",
+    "duration": "4 to 5 years (Foundation -> Inter -> Articleship -> Final)",
+    "difficulty": "High",
+    "future_demand": "High & Stable",
+    "education_path": "12th (Any Stream, Commerce preferred) -> CA Foundation -> CA Intermediate -> 2-year Articleship -> CA Final",
+    "entrance_exams": ["ICAI CA Foundation", "CA Intermediate", "CA Final"],
+    "top_colleges": ["Directly certified by Institute of Chartered Accountants of India (ICAI)"],
+    "skills_needed": ["Financial Accounting", "Taxation Laws (GST & Income Tax)", "Corporate Law", "Auditing", "Costing & Budgeting", "Excel & Financial Modeling"],
+    "parent_view": {
+      "cost_range": "Extremely Low compared to B.Tech/MBBS (ICAI total fees ₹75,000 across 4 years; stipend earned in articleship)",
+      "safety_level": "Safe corporate offices & private consultancy",
+      "job_security_score": 9,
+      "roi_timeline": "Superb ROI: Articleship gives monthly stipend of ₹5,000 - ₹15,000 during study",
+      "parent_tip": "Lowest college fee among top-tier professions. No mandatory expensive college needed; ICAI postal study works."
+    },
+    "free_resources": [
+      { "title": "ICAI Bos Knowledge Portal Free Study Material", "url": "https://icai.org/bos", "type": "Official ICAI Books" },
+      { "title": "Free CA Foundation Lectures on ICAI YouTube", "url": "https://youtube.com", "type": "Video Lectures" }
+    ]
+  },
+  {
+    "id": "bank_po",
+    "title": "Bank Probationary Officer (IBPS / SBI PO)",
+    "title_hi": "बैंक प्रोबेशनरी ऑफिसर (PO)",
+    "category": "govt",
+    "stream": "12th Commerce",
+    "eligible_streams": ["12th Commerce", "12th Science (PCM)", "12th Science (PCB)", "12th Arts"],
+    "summary": "Manage banking operations, loans, credit risk, and branch administration in public sector banks.",
+    "summary_hi": "सरकारी बैंकों (SBI, PNB आदि) में ऑफिसर पद, लोन अप्रूवल, शाखा प्रबंधन और सुरक्षित सम्मानजनक करियर।",
+    "salary_range": "₹52,000 - ₹75,000 / month + Leased accommodation & medical allowances",
+    "duration": "Graduation (3 yrs) + 6-12 months Prep",
+    "difficulty": "Moderate to High",
+    "future_demand": "High & Stable",
+    "education_path": "10+2 -> Any 3-year Graduation (BA/B.Com/B.Sc) -> IBPS PO / SBI PO Entrance Exam",
+    "entrance_exams": ["IBPS PO", "SBI PO", "RBI Grade B", "IBPS Clerk"],
+    "top_colleges": ["Any recognized degree college"],
+    "skills_needed": ["Quantitative Aptitude", "Logical Reasoning", "English Comprehension", "General & Banking Awareness", "Computer Knowledge"],
+    "parent_view": {
+      "cost_range": "Low: Standard graduation fee ₹15,000 - ₹40,000 + Exam fees ₹850",
+      "safety_level": "Air-conditioned bank branch, high security",
+      "job_security_score": 9.5,
+      "roi_timeline": "Instant ROI upon passing exam at age 21-25; concessional home/vehicle loans for staff",
+      "parent_tip": "Bank PO offers fast promotions. In 10-15 years, a student can become Chief Manager or Assistant General Manager."
+    },
+    "free_resources": [
+      { "title": "RBI Financial Education Portal", "url": "https://rbi.org.in", "type": "Official Banking Guide" },
+      { "title": "Free Quantitative Aptitude Practice on Testbook/Adda247", "url": "https://testbook.com", "type": "Mock Tests" }
+    ]
+  },
+  {
+    "id": "police_defence",
+    "title": "Police Sub-Inspector & Defence (NDA/CDS/Agniveer)",
+    "title_hi": "पुलिस सब-इंस्पेक्टर / रक्षा बल (NDA, CDS, अग्निवीर)",
+    "category": "govt",
+    "stream": "12th Arts",
+    "eligible_streams": ["12th Arts", "12th Science (PCM)", "12th Science (PCB)", "12th Commerce", "After 10th"],
+    "summary": "Serve the nation with valor, enforce law and order, protect borders, and lead armed units.",
+    "summary_hi": "देश की सुरक्षा, सीमाओं की रक्षा, वर्दी का गर्व और समाज में कानून-व्यवस्था कायम रखने का गौरवशाली पथ।",
+    "salary_range": "₹35,400 - ₹1,25,000 / month + Uniform, Medical, Canteen & Family Housing",
+    "duration": "10th/12th/Graduation + 6-9 months physical and written prep",
+    "difficulty": "Moderate (Requires High Physical Fitness)",
+    "future_demand": "Consistent National Need",
+    "education_path": "After 10th/12th -> Agniveer/NDA (for 12th) OR Graduation -> State Police SI / CDS Exam",
+    "entrance_exams": ["NDA (after 12th PCM/Any)", "CDS (after Graduation)", "State Police SI & Constable Exams", "Indian Army Agniveer"],
+    "top_colleges": ["National Defence Academy (Khadakwasla)", "IMA Dehradun", "State Police Training Academies"],
+    "skills_needed": ["Physical Fitness & 1600m Run", "General Knowledge & Constitution", "Mental Alertness", "Team Leadership", "Weapon Handling", "Stress Endurance"],
+    "parent_view": {
+      "cost_range": "Almost Zero (NDA/IMA training is 100% funded by Govt with monthly stipend!)",
+      "safety_level": "Physical field duty; strong medical insurance and institutional support",
+      "job_security_score": 10,
+      "roi_timeline": "Immediate earnings right from cadet training or joining age 19-21",
+      "parent_tip": "NDA training at Khadakwasla is fully free with stipend and free B.Sc/BA degree from JNU."
+    },
+    "free_resources": [
+      { "title": "Join Indian Army Official Portal", "url": "https://joinindianarmy.nic.in", "type": "Govt Recruitment" },
+      { "title": "UPSC NDA Previous Year Papers", "url": "https://upsc.gov.in", "type": "Free Official Papers" }
+    ]
+  },
+  {
+    "id": "iti_polytechnic",
+    "title": "Diploma Engineer & ITI Skilled Specialist",
+    "title_hi": "पॉलिटेक्निक डिप्लोमा / ITI कुशल तकनीशियन",
+    "category": "vocational",
+    "stream": "After 10th",
+    "eligible_streams": ["After 10th", "12th Science (PCM)", "12th Arts"],
+    "summary": "Hands-on technical careers in electrical, mechanical, civil, electronics, and railway loco maintenance.",
+    "summary_hi": "10वीं के तुरंत बाद 2-3 साल में हुनरमंद इंजीनियर बनें। रेलवे, बिजली विभाग और फैक्ट्रियों में भारी मांग।",
+    "salary_range": "₹18,000 - ₹45,000 / month (Govt PSU Junior Engineer: ₹35,000 - ₹70,000)",
+    "duration": "1 to 3 years (ITI: 1-2 yrs; Polytechnic Diploma: 3 yrs or 2 yrs lateral)",
+    "difficulty": "Moderate",
+    "future_demand": "High (Industrial & Infrastructure expansion)",
+    "education_path": "10th Pass -> State Polytechnic Entrance Exam (JEECUP, Delhi CET) or ITI Trade -> Junior Engineer in PSUs / Lateral Entry to B.Tech 2nd Year",
+    "entrance_exams": ["State Polytechnic Entrance (JEECUP, PECE, POLYCET)", "NCVT ITI Admission Merit", "RRB ALP & Technician Exam"],
+    "top_colleges": ["Govt Polytechnic Institutes in every district", "Govt ITI Centres", "Central Tool Room Training Institutes"],
+    "skills_needed": ["Circuit Wiring & Electrical Systems", "Blueprint Reading", "AutoCAD / Mechanical Tools", "Equipment Troubleshooting", "Safety Protocols"],
+    "parent_view": {
+      "cost_range": "Lowest: Govt Polytechnic fees is only ₹8,000 - ₹12,000 per year with UP/State Scholarships covering 100%",
+      "safety_level": "Industrial standard safety gears",
+      "job_security_score": 8.5,
+      "roi_timeline": "Quickest earning: Student starts earning at age 18-19 to support parents",
+      "parent_tip": "Ideal for rural families seeking fast financial independence. After 3-yr diploma, can directly enter 2nd year B.Tech if desired."
+    },
+    "free_resources": [
+      { "title": "Bharat Skills (Directorate General of Training)", "url": "https://bharatskills.gov.in", "type": "Govt Digital Books & Videos" },
+      { "title": "Skill India Digital Portal", "url": "https://skillindiadigital.gov.in", "type": "Certified Free Courses" }
+    ]
+  },
+  {
+    "id": "data_scientist",
+    "title": "Data Scientist & Business Intelligence Analyst",
+    "title_hi": "डेटा साइंटिस्ट / बिज़नेस इंटेलिजेंस एनालिस्ट",
+    "category": "private",
+    "stream": "12th Science (PCM)",
+    "eligible_streams": ["12th Science (PCM)", "12th Commerce", "12th Arts"],
+    "summary": "Analyze consumer trends, build predictive machine learning models, and guide CEO decision making.",
+    "summary_hi": "आंकड़ों और डेटा से भविष्य के ट्रेंड का अनुमान लगाना, कंपनियों के मुनाफे और रणनीति में मदद करना।",
+    "salary_range": "₹6 LPA - ₹40+ LPA (Global remote opportunities in USD)",
+    "duration": "3 to 4 years (BCA / B.Sc Stats / B.Tech / Online BS)",
+    "difficulty": "High",
+    "future_demand": "Extremely High (Highest growing field)",
+    "education_path": "12th (Maths required) -> B.Sc Data Science / Statistics / B.Tech / IIT Madras Online BS in Data Science",
+    "entrance_exams": ["IIT Madras BS Qualifier Exam", "CUET UG", "JEE Main"],
+    "top_colleges": ["IIT Madras (Online BS Degree)", "ISI Kolkata", "IITs", "Delhi University (Stats Hons)"],
+    "skills_needed": ["Python & SQL", "Statistics & Probability", "Machine Learning & AI", "Tableau / Power BI", "Data Wrangling", "Business Acumen"],
+    "parent_view": {
+      "cost_range": "IIT Madras Online Degree: ₹1L - ₹2.5L total (Can be done from home village with internet!)",
+      "safety_level": "Work from home / high-tech corporate offices",
+      "job_security_score": 8.5,
+      "roi_timeline": "1-2 years; students get internships of ₹25,000/mo while studying",
+      "parent_tip": "IIT Madras offers an official BS in Data Science for 12th pass students with no JEE required; complete study from home."
+    },
+    "free_resources": [
+      { "title": "Kaggle Micro-courses in Python & Machine Learning", "url": "https://kaggle.com/learn", "type": "Interactive Coding" },
+      { "title": "NPTEL Data Science for Engineers (IIT Madras)", "url": "https://nptel.ac.in", "type": "Govt Certified" }
+    ]
+  },
+  {
+    "id": "lawyer",
+    "title": "Corporate Lawyer / Judicial Magistrate",
+    "title_hi": "अधिवक्ता (वकील) / सिविल जज",
+    "category": "professional",
+    "stream": "12th Arts",
+    "eligible_streams": ["12th Arts", "12th Commerce", "12th Science (PCM)", "12th Science (PCB)"],
+    "summary": "Argue constitutional rights in High Court/Supreme Court, advise corporations on contracts, or clear Judiciary exam.",
+    "summary_hi": "अदालतों में न्याय की वकालत, कॉर्पोरेट लीगल एडवाइजर या राज्य न्यायिक सेवा परीक्षा देकर जज (Judge) बनना।",
+    "salary_range": "₹4.5 LPA - ₹30+ LPA (Judges: ₹77,840 - ₹1,36,520/month with bungalow & car)",
+    "duration": "5 years (Integrated BA LLB) or 3 years (LLB after Graduation)",
+    "difficulty": "Moderate to High",
+    "future_demand": "High & Unreplaceable by AI",
+    "education_path": "10+2 (Any Stream) -> CLAT / AILET Entrance -> 5-Year Integrated BA LLB / BBA LLB -> Bar Council Enrollment -> PCS (J) for Judiciary",
+    "entrance_exams": ["CLAT (Common Law Admission Test)", "AILET", "State Judicial Services Exam (PCS-J)"],
+    "top_colleges": ["NLSIU Bengaluru", "NALSAR Hyderabad", "WBNUJS Kolkata", "Faculty of Law DU", "National Law Universities"],
+    "skills_needed": ["Legal Research", "Constitutional Law", "Public Speaking & Cross Examination", "Drafting & Contracts", "Critical Thinking"],
+    "parent_view": {
+      "cost_range": "Govt Law Faculty (e.g. DU, State Univ): ₹15k - ₹40k total; NLUs: ₹2L - ₹3L/year (Eligible for National Education Loans)",
+      "safety_level": "Respected civil courtroom and chamber environment",
+      "job_security_score": 9,
+      "roi_timeline": "Immediate steady growth; Judicial Magistrates receive lifetime government rank",
+      "parent_tip": "Judiciary (Judge) exam can be written immediately after passing LLB at age 23-24."
+    },
+    "free_resources": [
+      { "title": "ePathshala Law Modules (Ministry of Education)", "url": "https://epgp.inflibnet.ac.in", "type": "Official Govt Video & Text" },
+      { "title": "LiveLaw & Bar & Bench Summaries", "url": "https://livelaw.in", "type": "Legal Updates" }
+    ]
+  },
+  {
+    "id": "graphic_uiux_designer",
+    "title": "UI/UX & Product Designer",
+    "title_hi": "UI/UX एवं ग्राफिक डिज़ाइनर",
+    "category": "private",
+    "stream": "12th Arts",
+    "eligible_streams": ["12th Arts", "12th Commerce", "12th Science (PCM)", "12th Science (PCB)", "After 10th"],
+    "summary": "Design delightful user experiences for mobile apps, fintech dashboards, brand logos, and visual digital products.",
+    "summary_hi": "मोबाइल ऐप और वेबसाइट के खूबसूरत और आसान इंटरफेस डिज़ाइन करना। भारी रिमोट और फ्रीलांसिंग मांग।",
+    "salary_range": "₹4 LPA - ₹24+ LPA (Freelancers earn $20 - $70/hr internationally)",
+    "duration": "6 months to 3 years (B.Des / Self-Taught Portfolio)",
+    "difficulty": "Moderate",
+    "future_demand": "High (Every business needs an app & website)",
+    "education_path": "10+2 -> B.Des / Visual Communication OR Direct Self-learning Figma + UI Portfolio",
+    "entrance_exams": ["UCEED (IIT Design)", "NID DAT", "NIFT Entrance"],
+    "top_colleges": ["NID Ahmedabad", "IDC IIT Bombay", "NIFT", "Srishti Institute of Art"],
+    "skills_needed": ["Figma & Prototyping", "User Research & Wireframing", "Color Theory & Typography", "Design Systems", "Usability Testing", "HTML/CSS Basics"],
+    "parent_view": {
+      "cost_range": "Low: Free to learn on YouTube + Figma is free for students; Laptop required",
+      "safety_level": "Safe remote home work or tech studios",
+      "job_security_score": 7.5,
+      "roi_timeline": "Fastest: Student can earn during first year of college via Upwork/Fiverr/Indian startups",
+      "parent_tip": "Degree name is secondary; companies hire 100% based on Figma portfolio. Ideal for creative minds."
+    },
+    "free_resources": [
+      { "title": "Google UX Design Professional Certificate (Financial Aid Available)", "url": "https://coursera.org", "type": "Industry Standard" },
+      { "title": "Figma Free Official YouTube Tutorials", "url": "https://youtube.com", "type": "Hands-on UI Tools" }
+    ]
+  },
+  {
+    "id": "nurse_healthcare",
+    "title": "B.Sc Nursing & Healthcare Specialist",
+    "title_hi": "बी.एससी नर्सिंग एवं पैरामेडिकल विशेषज्ञ",
+    "category": "professional",
+    "stream": "12th Science (PCB)",
+    "eligible_streams": ["12th Science (PCB)"],
+    "summary": "Provide critical intensive patient care in top hospitals with massive worldwide migration opportunities (UK, Germany, Gulf).",
+    "summary_hi": "हॉस्पिटल में मरीजों की देखभाल और आईसीयू मैनेजमेंट। विदेशों (जर्मनी, यूके, खाड़ी देश) में सबसे ज़्यादा मांग।",
+    "salary_range": "₹25,000 - ₹85,000 / month in India (Overseas: ₹2.5L - ₹4.5L / month)",
+    "duration": "3 to 4 years (B.Sc Nursing / GNM)",
+    "difficulty": "Moderate",
+    "future_demand": "100% Guaranteed Employment Worldwide",
+    "education_path": "12th PCB -> State Nursing Entrance / AIIMS Nursing Entrance -> B.Sc Nursing (4 yrs) -> Govt Hospital / Foreign Licensing (OET/NCLEX)",
+    "entrance_exams": ["AIIMS B.Sc Nursing", "State CET Nursing", "NEET (some institutes)"],
+    "top_colleges": ["AIIMS New Delhi", "CMC Ludhiana", "Govt College of Nursing", "State Medical University Affiliated Colleges"],
+    "skills_needed": ["Patient Vital Monitoring", "Emergency Care & CPR", "Medication Administration", "Infection Control", "Empathy & Resilience"],
+    "parent_view": {
+      "cost_range": "Govt Nursing College: ₹10k - ₹30k total fees; Private: ₹2L - ₹4L (High bank loan availability)",
+      "safety_level": "Hospital environment with regulated night shifts",
+      "job_security_score": 10,
+      "roi_timeline": "Zero unemployment: Every single nursing graduate gets placed immediately upon graduation",
+      "parent_tip": "High demand in Germany and UK with free visa and ₹2.5 Lakh/month starting salary for Indian nurses."
+    },
+    "free_resources": [
+      { "title": "Clinical Skills YouTube Series (Geeky Medics)", "url": "https://youtube.com", "type": "Practical Nursing Videos" },
+      { "title": "WHO Open Online Health Courses", "url": "https://openwho.org", "type": "Global Healthcare Certs" }
+    ]
+  },
+  {
+    "id": "teacher",
+    "title": "Govt & School Teacher / Lecturer (CTET / B.Ed)",
+    "title_hi": "सरकारी शिक्षक / प्रवक्ता (CTET / TGT / PGT)",
+    "category": "govt",
+    "stream": "12th Arts",
+    "eligible_streams": ["12th Arts", "12th Science (PCM)", "12th Science (PCB)", "12th Commerce"],
+    "summary": "Shape the minds of youth in Kendriya Vidyalaya, Navodaya, or state govt schools with excellent work-life balance.",
+    "summary_hi": "केंद्रीय विद्यालय, नवोदय या राज्य स्कूलों में शिक्षक। सम्मान, छुट्टियों का सुख और बच्चों का भविष्य संवारना।",
+    "salary_range": "₹35,400 - ₹75,000 / month (Govt PRT/TGT/PGT) + Summer vacations",
+    "duration": "Graduation (3 yrs) + B.Ed / D.El.Ed (2 yrs)",
+    "difficulty": "Moderate",
+    "future_demand": "Consistent & Respectful",
+    "education_path": "10+2 -> D.El.Ed (for Primary) OR 10+2 -> Graduation -> B.Ed -> CTET / State TET Exam",
+    "entrance_exams": ["CTET (Central Teacher Eligibility Test)", "UPTET / REET / STET", "KVS / NVS Recruitment Exam"],
+    "top_colleges": ["Regional Institutes of Education (NCERT)", "State Govt Teacher Training Colleges", "Central Universities"],
+    "skills_needed": ["Pedagogy & Child Psychology", "Subject Mastery", "Classroom Communication", "Lesson Planning", "Continuous Evaluation"],
+    "parent_view": {
+      "cost_range": "Low: D.El.Ed / B.Ed in Govt DIET college costs under ₹20,000 total",
+      "safety_level": "Safe daylight school hours (8 AM - 2 PM), 60+ days paid vacations",
+      "job_security_score": 10,
+      "roi_timeline": "Predictable, peaceful family lifestyle with government pension/NPS",
+      "parent_tip": "Best profession for rural girls and youth who want respectful local employment and free summer vacations."
+    },
+    "free_resources": [
+      { "title": "DIKSHA National Digital Education Portal", "url": "https://diksha.gov.in", "type": "NCERT Teacher Modules" },
+      { "title": "Free CTET Previous Papers & Mock Tests", "url": "https://ctet.nic.in", "type": "Official Exam Papers" }
+    ]
+  },
+  {
+    "id": "digital_marketer",
+    "title": "Digital Marketer & Social Growth Specialist",
+    "title_hi": "डिजिटल मार्केटर एवं ई-कॉमर्स विशेषज्ञ",
+    "category": "private",
+    "stream": "12th Commerce",
+    "eligible_streams": ["12th Commerce", "12th Arts", "12th Science (PCM)", "12th Science (PCB)", "After 10th"],
+    "summary": "Run Google Ads, Instagram growth campaigns, SEO, and affiliate marketing for modern brands and online stores.",
+    "summary_hi": "गूगल एड्स, यूट्यूब मार्केटिंग, सोशल मीडिया और ई-कॉमर्स सेल्स बढ़ाना। अपनी दुकान या क्लाइंट्स के लिए काम।",
+    "salary_range": "₹3.5 LPA - ₹18+ LPA + Performance incentives & affiliate earnings",
+    "duration": "3 to 6 months practical learning",
+    "difficulty": "Easy to Moderate",
+    "future_demand": "High (Every offline business is moving online)",
+    "education_path": "10+2 (Any Stream) -> Free Google/Meta Certifications -> Practical live campaigns -> Agency or Freelance",
+    "entrance_exams": ["No formal entrance; industry relies on Google Ads & Meta Certified Media Planner certs"],
+    "top_colleges": ["Open to all degree backgrounds (BA, B.Com, BBA, B.Sc)"],
+    "skills_needed": ["SEO (Search Engine Optimization)", "Google & Meta Ads", "Content Writing & Copywriting", "Social Media Strategy", "Google Analytics 4"],
+    "parent_view": {
+      "cost_range": "Zero tuition: Google and Meta offer free official certifications",
+      "safety_level": "Safe remote home office setup",
+      "job_security_score": 7,
+      "roi_timeline": "Within 3-6 months; youth can earn through freelance social management for local businesses",
+      "parent_tip": "High practical value. Even a small village youth can run Facebook ads for local merchants and earn ₹15k - ₹30k/month."
+    },
+    "free_resources": [
+      { "title": "Google Digital Garage - Fundamentals of Digital Marketing", "url": "https://skillshop.exceedlms.com", "type": "Free Certificate from Google" },
+      { "title": "Meta Blueprint Free Training", "url": "https://facebook.com/business/learn", "type": "Meta Official" },
+      { "title": "HubSpot Academy Inbound Marketing Free Course", "url": "https://academy.hubspot.com", "type": "Global Certificate" }
+    ]
+  },
+  {
+    "id": "commercial_pilot",
+    "title": "Commercial Airline Pilot",
+    "title_hi": "कमर्शियल पायलट (विमान चालक)",
+    "category": "professional",
+    "stream": "12th Science (PCM)",
+    "eligible_streams": ["12th Science (PCM)"],
+    "summary": "Command passenger airliners (Airbus/Boeing) across international routes with elite lifestyle and prestige.",
+    "summary_hi": "यात्री विमान उड़ाना, आसमान की ऊंचाइयों में करियर और विश्व स्तर पर उच्च वेतन व प्रतिष्ठा।",
+    "salary_range": "₹1.8 LPA - ₹8.5 Lakhs / month (Captain: ₹6L - ₹10L/month)",
+    "duration": "18 to 24 months flying training",
+    "difficulty": "High",
+    "future_demand": "High (India is fastest growing aviation market)",
+    "education_path": "10+2 with Physics & Maths -> DGCA Class 1 & 2 Medical -> Flying School (200 hrs flying) -> Commercial Pilot License (CPL) -> Type Rating",
+    "entrance_exams": ["IGRUA Entrance Exam", "DGCA Theory Exams (Navigation, Met, Regs)", "Airline Cadet Pilot Tests"],
+    "top_colleges": ["Indira Gandhi Rashtriya Uran Akademi (IGRUA Raebareli)", "National Flying Training Institute (NFTI Gondia)"],
+    "skills_needed": ["Spatial Awareness", "Aviation Meteorology", "Cockpit Resource Management", "English RT Telephony", "Quick Reflexes", "Instrument Flying"],
+    "parent_view": {
+      "cost_range": "High: ₹35L - ₹50L for 200 hours flying training (Secured bank education loans available from SBI)",
+      "safety_level": "World-class aviation safety protocols",
+      "job_security_score": 8,
+      "roi_timeline": "First Officer starting salary ₹1.8L - ₹2.5L/month pays off loan within 3-4 years",
+      "parent_tip": "Students from humble backgrounds can also join Indian Air Force via NDA after 12th for 100% free pilot training with Govt officer rank."
+    },
+    "free_resources": [
+      { "title": "DGCA Official Syllabus & Regulations", "url": "https://dgca.gov.in", "type": "Aviation Guidelines" },
+      { "title": "FAA Aviation Safety Handbooks (Free PDF)", "url": "https://faa.gov", "type": "World Standard Books" }
+    ]
+  },
+  {
+    "id": "agriculture_specialist",
+    "title": "B.Sc Agriculture & Organic Agribusiness",
+    "title_hi": "कृषि विशेषज्ञ / एग्री-बिजनेस प्रबंधक",
+    "category": "vocational",
+    "stream": "12th Science (PCB)",
+    "eligible_streams": ["12th Science (PCB)", "12th Science (PCM)", "After 10th"],
+    "summary": "Modernize Indian farming with precision drip tech, seed biotechnology, drone spraying, and organic export supply chains.",
+    "summary_hi": "खेती को आधुनिक तकनीक, ड्रोन, जैविक खाद और एग्री-स्टार्टअप से जोड़कर ग्रामीण समृद्धि लाना।",
+    "salary_range": "₹3.5 LPA - ₹15+ LPA (Govt Agriculture Officer: ₹55,000/mo; Agribusiness: High profit)",
+    "duration": "4 years (B.Sc Agriculture / Horticulture)",
+    "difficulty": "Moderate",
+    "future_demand": "Evergreen & High Govt Subsidies",
+    "education_path": "12th PCB/PCM -> ICAR AIEEA / State Agriculture Entrance -> 4-yr B.Sc Agriculture -> NABARD / IFFCO / Bank AFO Officer",
+    "entrance_exams": ["ICAR AIEEA (CUET UG)", "State Agriculture Combined Entrance (UPCATET, BCECE)", "IBPS SO (Agriculture Field Officer)"],
+    "top_colleges": ["GB Pant University Pantnagar", "Punjab Agricultural University Ludhiana", "IARI New Delhi", "CCS HAU Hisar"],
+    "skills_needed": ["Soil Science & Agronomy", "Pest & Fertilizer Management", "Agri-Drone Operation", "Supply Chain Logistics", "Govt Scheme Subsidy Rules"],
+    "parent_view": {
+      "cost_range": "Low: State Agriculture Universities have nominal fee ₹15,000 - ₹30,000/yr with ICAR scholarships",
+      "safety_level": "Healthy outdoor agro-climatic environment",
+      "job_security_score": 9,
+      "roi_timeline": "Special bank quota: IBPS recruits 3,000+ Agriculture Field Officers in Govt Banks every year",
+      "parent_tip": "Direct eligibility for Govt Agriculture Inspector, IFFCO, NABARD and dedicated Bank AFO posts that general grads cannot apply for."
+    },
+    "free_resources": [
+      { "title": "e-Krishi Shiksha (ICAR Digital Learning Portal)", "url": "https://ecourses.icar.gov.in", "type": "Govt Agriculture Books" },
+      { "title": "Kisan Suvidha & Krishi Vigyan Kendra Modules", "url": "https://kisansuvidha.gov.in", "type": "Practical Farming Tech" }
+    ]
+  },
+  {
+    "id": "entrepreneur",
+    "title": "Micro-Enterprise & MSME Entrepreneur",
+    "title_hi": "उद्यमी / स्वरोजगार एवं एमएसएमई बिज़नेस",
+    "category": "private",
+    "stream": "12th Commerce",
+    "eligible_streams": ["12th Commerce", "12th Arts", "12th Science (PCM)", "12th Science (PCB)", "After 10th"],
+    "summary": "Launch localized manufacturing, food processing, digital service agencies, or retail outlets with PMEGP/Mudra loans.",
+    "summary_hi": "खुद का बिज़नेस, मैन्युफैक्चरिंग या ऑनलाइन स्टोर शुरू करना। प्रधानमंत्री मुद्रा और PMEGP सब्सिडी योजना का लाभ।",
+    "salary_range": "₹3 LPA to Unlimited Scalable Profits",
+    "duration": "Continuous Real-World Journey",
+    "difficulty": "High",
+    "future_demand": "National Focus (Make in India)",
+    "education_path": "10th/12th/Graduate -> EDP (Entrepreneurship Development Program) -> Mudra Loan / Stand-Up India -> Enterprise Launch",
+    "entrance_exams": ["No entrance; business plan evaluation by MSME / District Industries Centre (DIC)"],
+    "top_colleges": ["EDI Ahmedabad", "NIESBUD Noida", "IIMs E-Cells", "Local RSETI Centers (Free training by Govt Banks)"],
+    "skills_needed": ["Cashflow Management", "Customer Sales & Negotiation", "Inventory & Vendor Management", "Digital Marketing", "PMEGP/Mudra Subsidy Navigation"],
+    "parent_view": {
+      "cost_range": "Mudra Shishu loan provides up to ₹50,000 without collateral; Kishore loan up to ₹5 Lakhs with 35% Govt subsidy under PMEGP",
+      "safety_level": "Self-managed work",
+      "job_security_score": 6.5,
+      "roi_timeline": "Builds family generational wealth and provides employment to fellow villagers",
+      "parent_tip": "Govt RSETI institutes in every district provide 100% free food, stay, and vocational business training with direct bank linkages."
+    },
+    "free_resources": [
+      { "title": "MSME Samadhaan & Udyam Registration Portal", "url": "https://udyamregistration.gov.in", "type": "Govt Business Portal" },
+      { "title": "PMEGP Portal for 35% Govt Subsidy on Projects", "url": "https://kviconline.gov.in", "type": "Subsidy Guide" }
+    ]
+  }
+]
