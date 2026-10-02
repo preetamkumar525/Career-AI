@@ -55,6 +55,7 @@ const COMMON_SKILLS = [
   { name: 'Tally', category: 'Vocational' },
   { name: 'Tailoring', category: 'Vocational' },
   { name: 'Welding', category: 'Vocational' },
+  { name: 'Driving', category: 'Vocational' },
   { name: 'AutoCAD / Mechanical Tools', category: 'Vocational' },
   { name: 'Solar Panel Installation', category: 'Vocational' },
   // Core & Administrative

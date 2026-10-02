@@ -211,7 +211,9 @@ export function matchCareers(skillProfile) {
           (u.includes('excel') && (n.includes('excel') || n.includes('data') || n.includes('account'))) ||
           (u.includes('tally') && (n.includes('account') || n.includes('tax') || n.includes('budget'))) ||
           (u.includes('electric') && (n.includes('circuit') || n.includes('wiring') || n.includes('equipment'))) ||
-          (u.includes('tailor') && (n.includes('design') || n.includes('creative'))) ||
+          (u.includes('weld') && (n.includes('equipment') || n.includes('tool') || n.includes('safety') || n.includes('mechanical'))) ||
+          (u.includes('driv') && (n.includes('alert') || n.includes('reflex') || n.includes('logistics') || n.includes('fitness'))) ||
+          (u.includes('tailor') && (n.includes('design') || n.includes('creative') || n.includes('troubleshooting'))) ||
           (u.includes('sql') && (n.includes('data') || n.includes('database'))) ||
           (u.includes('communicat') && (n.includes('communicat') || n.includes('english') || n.includes('essay') || n.includes('speaking')))
         );
