@@ -4,6 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useGamification } from '../context/GamificationContext';
 import { useSkillProfile } from '../context/SkillProfileContext';
 import {
+  extractSkillsFromCertificate,
   parseCertificateMock,
   SAMPLE_CERTIFICATES,
   matchCareers,
@@ -99,6 +100,7 @@ export default function SkillScanner() {
     return savedProfile?.certificates || [];
   });
   const [isScanning, setIsScanning] = useState(false);
+  const [ocrProgress, setOcrProgress] = useState({ status: '', progress: 0 });
   const [uploadError, setUploadError] = useState('');
   const [certificatePreview, setCertificatePreview] = useState(null); // { url, type, name, size }
   
@@ -196,6 +198,7 @@ export default function SkillScanner() {
 
     setUploadError('');
     setIsScanning(true);
+    setOcrProgress({ status: 'Initializing Tesseract.js OCR engine...', progress: 0.1 });
 
     // Create object URL for preview
     const isImage = file.type.startsWith('image/');
@@ -208,7 +211,9 @@ export default function SkillScanner() {
     setCertificatePreview(previewObj);
 
     try {
-      const parsed = await parseCertificateMock(file);
+      const parsed = await extractSkillsFromCertificate(file, (p) => {
+        setOcrProgress(p);
+      });
       setExtractedData({
         ...parsed,
         previewUrl: previewObj.url,
@@ -217,7 +222,7 @@ export default function SkillScanner() {
       setEditingCertIndex(null);
       setShowReviewModal(true);
     } catch (err) {
-      setUploadError('Unable to scan document. Please try again or enter details manually.');
+      setUploadError('Unable to scan document with OCR. Please try again or enter details manually.');
     } finally {
       setIsScanning(false);
       // Reset input value so same file can be selected again
@@ -229,6 +234,7 @@ export default function SkillScanner() {
   const handleSelectSample = async (sample) => {
     setIsScanning(true);
     setUploadError('');
+    setOcrProgress({ status: `Loading sample: ${sample.label}...`, progress: 0.3 });
     setCertificatePreview({
       name: `${sample.label}.png`,
       size: '240 KB',
@@ -237,7 +243,9 @@ export default function SkillScanner() {
     });
 
     try {
-      const parsed = await parseCertificateMock(sample.id);
+      const parsed = await extractSkillsFromCertificate(sample.id, (p) => {
+        setOcrProgress(p);
+      });
       setExtractedData({
         ...parsed,
         previewUrl: null,
@@ -522,17 +530,36 @@ export default function SkillScanner() {
                 />
 
                 {isScanning ? (
-                  <div className="py-6 space-y-4">
-                    <div className="w-14 h-14 rounded-2xl bg-tealAccent-100 dark:bg-tealAccent-950 text-tealAccent-600 dark:text-tealAccent-400 flex items-center justify-center mx-auto animate-spin">
-                      <RefreshCw className="w-7 h-7" />
+                  <div className="py-8 space-y-4 max-w-sm mx-auto">
+                    {/* Animated OCR Scanning Dual-Ring Spinner */}
+                    <div className="relative w-16 h-16 mx-auto">
+                      <div className="w-16 h-16 rounded-full border-4 border-slate-200 dark:border-slate-700 animate-spin border-t-tealAccent-500 border-r-brand-500" />
+                      <div className="absolute inset-0 flex items-center justify-center text-tealAccent-600 dark:text-tealAccent-400 font-extrabold text-xs">
+                        {Math.max(5, Math.round((ocrProgress?.progress || 0) * 100))}%
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-sm text-slate-800 dark:text-slate-200">
-                        {language === 'hi' ? 'AI प्रमाण पत्र को स्कैन कर रहा है...' : 'Scanning & extracting certificate metadata...'}
+
+                    <div className="space-y-2">
+                      <h4 className="font-extrabold text-sm text-slate-800 dark:text-slate-200 flex items-center justify-center gap-1.5">
+                        <Sparkles className="w-4 h-4 text-tealAccent-500 animate-pulse shrink-0" />
+                        <span>{ocrProgress.status || (language === 'hi' ? 'Tesseract OCR टेक्स्ट पढ़ रहा है...' : 'Tesseract.js OCR is reading certificate text...')}</span>
                       </h4>
-                      <p className="text-xs text-slate-500 mt-1">
-                        {language === 'hi' ? 'शीर्षक, संस्थान, विषय व वर्ष को पहचाना जा रहा है' : 'Detecting issuing institute, skills, and credential validity'}
+                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                        {language === 'hi'
+                          ? 'इमेज से सीधे अक्षरों और कौशल की पहचान की जा रही है। कृपया कुछ सेकंड प्रतीक्षा करें...'
+                          : 'Extracting characters and detecting skills directly from certificate image pixels. Please wait a few seconds...'}
                       </p>
+
+                      {/* Dynamic Progress Bar */}
+                      <div className="w-64 max-w-full mx-auto bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden mt-3">
+                        <div
+                          className="bg-gradient-to-r from-tealAccent-500 to-brand-500 h-full transition-all duration-300 rounded-full"
+                          style={{ width: `${Math.max(8, Math.min(100, Math.round((ocrProgress?.progress || 0) * 100)))}%` }}
+                        />
+                      </div>
+                      <span className="text-[10px] text-slate-400 dark:text-slate-500 font-semibold block">
+                        Powered by Tesseract.js Neural Character Recognition
+                      </span>
                     </div>
                   </div>
                 ) : (
