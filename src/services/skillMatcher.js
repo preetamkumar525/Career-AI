@@ -189,8 +189,62 @@ function parseMockFallback(fileName = '') {
 }
 
 /**
+ * Preprocess an image File/Blob via HTML Canvas:
+ * - Converts to grayscale
+ * - Boosts contrast by scaling pixel intensity (factor 1.6)
+ * Returns a Promise<Blob> (PNG) of the processed image.
+ */
+async function preprocessImageForOCR(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imageData.data;
+        const contrastFactor = 1.6; // boost contrast before OCR
+
+        for (let i = 0; i < data.length; i += 4) {
+          // Convert to grayscale using luminance weights
+          const gray = 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2];
+          // Stretch contrast around midpoint 128
+          const contrasted = Math.min(255, Math.max(0, contrastFactor * (gray - 128) + 128));
+          data[i] = contrasted;
+          data[i + 1] = contrasted;
+          data[i + 2] = contrasted;
+          // alpha (data[i+3]) unchanged
+        }
+
+        ctx.putImageData(imageData, 0, 0);
+        URL.revokeObjectURL(url);
+        canvas.toBlob((blob) => {
+          if (blob) resolve(blob);
+          else reject(new Error('Canvas toBlob returned null'));
+        }, 'image/png');
+      } catch (e) {
+        URL.revokeObjectURL(url);
+        reject(e);
+      }
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      reject(new Error('Failed to load image for preprocessing'));
+    };
+    img.src = url;
+  });
+}
+
+/**
  * Real OCR and Certificate Extraction Service using Tesseract.js
- * Reads the actual text inside the uploaded certificate image and detects skill keywords from the OCR text.
+ * - Preprocesses the image (grayscale + contrast boost) before OCR
+ * - Uses eng+hin language model to handle bilingual certificates
+ * - Returns lowQuality:true when Tesseract confidence < 50%
  */
 export async function extractSkillsFromCertificate(fileOrSample, onProgress = null) {
   // If a sample certificate ID was passed (string)
@@ -203,7 +257,7 @@ export async function extractSkillsFromCertificate(fileOrSample, onProgress = nu
     return getPredefinedSample(fileOrSample);
   }
 
-  // If a PDF document was passed (Tesseract.js operates on image elements / bitmaps)
+  // If a PDF document was passed (Tesseract.js operates on image bitmaps only)
   const isPdf = fileOrSample?.type === 'application/pdf' || fileOrSample?.name?.toLowerCase().endsWith('.pdf');
   if (isPdf) {
     if (onProgress) {
@@ -214,28 +268,41 @@ export async function extractSkillsFromCertificate(fileOrSample, onProgress = nu
     const fallback = parseMockFallback(fileOrSample?.name || '');
     return {
       ...fallback,
+      lowQuality: false,
       notes: 'PDF parsed. For direct OCR image reading with Tesseract, upload a photo or image (JPG/PNG).'
     };
   }
 
-  // Real Tesseract OCR execution on image (File, Blob, or Image URL)
+  // Real Tesseract OCR on image
   try {
-    if (onProgress) {
-      onProgress({ status: 'Initializing Tesseract OCR worker...', progress: 0.15 });
+    // Step 1 — Preprocess image (grayscale + contrast)
+    if (onProgress) onProgress({ status: 'Preprocessing image (grayscale + contrast boost)...', progress: 0.1 });
+
+    let imageSource = fileOrSample;
+    try {
+      imageSource = await preprocessImageForOCR(fileOrSample);
+    } catch (prepErr) {
+      console.warn('Image preprocessing failed, using original file:', prepErr);
+      imageSource = fileOrSample; // graceful fallback — use raw file
     }
 
+    if (onProgress) onProgress({ status: 'Initializing Tesseract OCR engine (eng+hin)...', progress: 0.2 });
+
+    // Step 2 — Run Tesseract with eng+hin (handles English + Hindi bilingual certificates)
     const result = await Tesseract.recognize(
-      fileOrSample,
-      'eng',
+      imageSource,
+      'eng+hin',
       {
         logger: (m) => {
           if (onProgress && m) {
             let label = 'Processing certificate...';
             if (m.status === 'loading tesseract core') label = 'Loading Tesseract engine core...';
             else if (m.status === 'initializing tesseract') label = 'Initializing OCR neural models...';
-            else if (m.status === 'loading language traineddata') label = 'Loading English character data...';
-            else if (m.status === 'recognizing text') label = `Reading certificate text (${Math.round((m.progress || 0) * 100)}%)...`;
-            
+            else if (m.status === 'loading language traineddata') {
+              label = 'Loading English + Hindi character data...';
+            } else if (m.status === 'recognizing text') {
+              label = `Reading certificate text (${Math.round((m.progress || 0) * 100)}%)...`;
+            }
             onProgress({
               status: label,
               progress: typeof m.progress === 'number' ? m.progress : 0.5
@@ -246,10 +313,26 @@ export async function extractSkillsFromCertificate(fileOrSample, onProgress = nu
     );
 
     const rawText = result?.data?.text || '';
-    const tesseractConfidence = Math.round(result?.data?.confidence || 85);
+    const tesseractConfidence = Math.round(result?.data?.confidence ?? 0);
     const cleanedText = rawText.replace(/\r\n/g, '\n').trim();
 
-    // 1. Detect skill keywords from actual OCR extracted text
+    // Step 3 — Low quality gate: confidence < 50% → ask user to enter details manually
+    if (tesseractConfidence < 50) {
+      return {
+        certificateName: '',
+        skillArea: '',
+        issuingInstitute: '',
+        completionYear: new Date().getFullYear().toString(),
+        detectedSkills: [],
+        confidence: tesseractConfidence,
+        rawText: cleanedText.slice(0, 200),
+        ocrEngine: 'Tesseract.js OCR v7 (eng+hin)',
+        lowQuality: true,
+        notes: `Scan quality too low (${tesseractConfidence}% confidence). Please enter certificate details manually for accurate results.`
+      };
+    }
+
+    // Step 4 — Detect skill keywords from OCR text
     const detectedSkills = [];
     const lowerText = cleanedText.toLowerCase();
 
@@ -263,16 +346,10 @@ export async function extractSkillsFromCertificate(fileOrSample, onProgress = nu
       }
     });
 
-    // 2. Extract Institute
+    // Step 5 — Extract structured fields
     const issuingInstitute = extractInstituteFromText(cleanedText);
-
-    // 3. Extract Year
     const completionYear = extractYearFromText(cleanedText);
-
-    // 4. Extract Certificate / Course Title
     const certificateName = extractCertificateTitle(cleanedText, detectedSkills);
-
-    // 5. Skill area summary
     const skillArea = detectedSkills.length > 0
       ? detectedSkills.slice(0, 4).join(', ')
       : 'Applied Foundations & Professional Skills';
@@ -283,16 +360,18 @@ export async function extractSkillsFromCertificate(fileOrSample, onProgress = nu
       issuingInstitute,
       completionYear,
       detectedSkills: detectedSkills.length > 0 ? detectedSkills : ['Communication', 'Problem Solving'],
-      confidence: Math.max(72, Math.min(99, tesseractConfidence)),
+      confidence: Math.min(99, tesseractConfidence),
       rawText: cleanedText.slice(0, 400),
-      ocrEngine: 'Tesseract.js OCR v7',
-      notes: `Extracted via real Tesseract OCR (${detectedSkills.length} skills identified in certificate image).`
+      ocrEngine: 'Tesseract.js OCR v7 (eng+hin)',
+      lowQuality: false,
+      notes: `Extracted via Tesseract OCR with grayscale+contrast preprocessing (${detectedSkills.length} skills identified).`
     };
   } catch (err) {
     console.warn('Tesseract OCR encountered an error, falling back to heuristic parsing:', err);
     const fallback = parseMockFallback(fileOrSample?.name || '');
     return {
       ...fallback,
+      lowQuality: false,
       notes: 'Image scanned. Verify and adjust extracted details.'
     };
   }

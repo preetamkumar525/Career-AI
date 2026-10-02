@@ -214,6 +214,16 @@ export default function SkillScanner() {
       const parsed = await extractSkillsFromCertificate(file, (p) => {
         setOcrProgress(p);
       });
+
+      // Low quality gate — confidence < 50%: do NOT open the garbled modal
+      if (parsed.lowQuality) {
+        setUploadError(
+          `⚠️ Scan quality too low (${parsed.confidence}% confidence) — the image may be blurry, poorly lit, or too small. ` +
+          `Please use the "Manual Entry" section below to enter your certificate details, or re-upload a clearer photo.`
+        );
+        return; // skip modal
+      }
+
       setExtractedData({
         ...parsed,
         previewUrl: previewObj.url,
@@ -1390,7 +1400,8 @@ export default function SkillScanner() {
                     {editingCertIndex !== null ? 'Edit Certificate Details' : 'Verify Extracted Certificate Details'}
                   </h3>
                   <p className="text-[11px] text-slate-500">
-                    OCR scanned with {extractedData.confidence || 95}% confidence. Please correct any inaccuracies.
+                    Scanned with <span className="font-semibold text-tealAccent-600">{extractedData.ocrEngine || 'Tesseract.js OCR v7 (eng+hin)'}</span> — {extractedData.confidence || 0}% confidence.
+                    All fields below are editable — correct any mistakes before saving.
                   </p>
                 </div>
               </div>
