@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { useQuiz } from '../context/QuizContext';
 import { useGamification } from '../context/GamificationContext';
+import { useSkillProfile } from '../context/SkillProfileContext';
 import { generateRoadmap } from '../services/aiService';
 import careersData from '../data/careers.json';
 import {
@@ -19,25 +20,49 @@ import {
   DollarSign,
   Share2,
   CheckCircle2,
-  Award
+  Award,
+  ScanLine
 } from 'lucide-react';
+
+function mapEduToClass(edu = '') {
+  const e = edu.toLowerCase();
+  if (e.includes('10th')) return '10th';
+  if (e.includes('11th')) return '11th';
+  if (e.includes('12th')) return '12th';
+  if (e.includes('diploma') || e.includes('iti')) return 'Diploma/ITI';
+  if (e.includes('post graduate') || e.includes('graduate')) return 'Graduate';
+  return '12th';
+}
+
+function mapStream(stream = '') {
+  const s = stream.toLowerCase();
+  if (s.includes('pcm')) return 'Science (PCM)';
+  if (s.includes('pcb')) return 'Science (PCB)';
+  if (s.includes('commerce')) return 'Commerce';
+  if (s.includes('arts')) return 'Arts / Humanities';
+  if (s.includes('vocational') || s.includes('iti')) return 'Vocational / ITI';
+  return 'Science (PCM)';
+}
 
 export default function RoadmapGenerator() {
   const { language, t } = useLanguage();
   const { quizResult } = useQuiz();
   const { addXP, unlockBadge } = useGamification();
+  const { skillProfile } = useSkillProfile();
   const [searchParams] = useSearchParams();
 
   const careerParam = searchParams.get('career');
 
-  const [formData, setFormData] = useState({
-    currentClass: '12th',
-    stream: 'Science (PCM)',
-    targetCareer: careerParam || (quizResult?.topCareers?.[0]?.title) || 'Software Engineer / AI Developer',
-    state: 'Uttar Pradesh',
-    budget: 'Under ₹25,000 / year (Low Budget)',
-    studyHours: 4,
-    preferredLanguage: language === 'hi' ? 'Hindi' : 'English'
+  const [formData, setFormData] = useState(() => {
+    return {
+      currentClass: skillProfile ? mapEduToClass(skillProfile.educationLevel) : '12th',
+      stream: skillProfile ? mapStream(skillProfile.stream) : 'Science (PCM)',
+      targetCareer: careerParam || skillProfile?.bestCareerMatch?.title || (quizResult?.topCareers?.[0]?.title) || 'Software Engineer / AI Developer',
+      state: 'Uttar Pradesh',
+      budget: 'Under ₹25,000 / year (Low Budget)',
+      studyHours: 4,
+      preferredLanguage: language === 'hi' ? 'Hindi' : 'English'
+    };
   });
 
   const [roadmap, setRoadmap] = useState(null);
@@ -94,6 +119,37 @@ export default function RoadmapGenerator() {
             : 'Generate a realistic 6-month preparation blueprint tailored to your target exam, available hours, and family budget. Export to PDF.'}
         </p>
       </div>
+
+      {/* Auto-filled from Skill Scanner Banner */}
+      {skillProfile && (
+        <div className="p-4 rounded-2xl bg-tealAccent-50 dark:bg-tealAccent-950/40 border border-tealAccent-200 dark:border-tealAccent-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 no-print">
+          <div className="flex items-center gap-2.5">
+            <ScanLine className="w-5 h-5 text-tealAccent-600 shrink-0" />
+            <div>
+              <p className="text-xs sm:text-sm font-bold text-tealAccent-900 dark:text-tealAccent-100">
+                ✨ Auto-filled from your Smart Skill Scanner profile
+              </p>
+              <p className="text-[11px] text-tealAccent-700 dark:text-tealAccent-300">
+                Education: <span className="font-semibold">{skillProfile.educationLevel}</span> • Stream: <span className="font-semibold">{skillProfile.stream}</span> • Target: <span className="font-semibold">{formData.targetCareer}</span>
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              setFormData({
+                ...formData,
+                currentClass: mapEduToClass(skillProfile.educationLevel),
+                stream: mapStream(skillProfile.stream),
+                targetCareer: skillProfile.bestCareerMatch?.title || formData.targetCareer
+              });
+            }}
+            className="px-3 py-1.5 rounded-xl bg-tealAccent-600 hover:bg-tealAccent-700 text-white text-xs font-bold shrink-0 transition-colors"
+          >
+            Re-apply Scanner Data
+          </button>
+        </div>
+      )}
 
       {/* Input Form Card (Hidden in print) */}
       <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-card space-y-6 no-print">

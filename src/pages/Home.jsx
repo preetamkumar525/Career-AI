@@ -21,7 +21,8 @@ import {
   Award,
   Zap,
   Star,
-  Quote
+  Quote,
+  ScanLine
 } from 'lucide-react';
 
 export default function Home() {
@@ -39,8 +40,16 @@ export default function Home() {
       badge: 'Start Here'
     },
     {
+      to: '/skill-scanner',
+      title: language === 'hi' ? '2. स्मार्ट स्किल स्कैनर' : '2. Smart Skill Scanner',
+      desc: language === 'hi' ? 'प्रमाणपत्र स्कैन करें या हुनर दर्ज करें - उपयुक्त करियर, सरकारी पद और फ्री कोर्स खोजें।' : 'Scan certificates with OCR or enter education to match careers, govt exams & free learning paths.',
+      icon: ScanLine,
+      color: 'bg-tealAccent-500',
+      badge: 'New Feature'
+    },
+    {
       to: '/govt-jobs',
-      title: language === 'hi' ? '2. सरकारी नौकरी हब' : '2. Government Jobs Hub',
+      title: language === 'hi' ? '3. सरकारी नौकरी हब' : '3. Government Jobs Hub',
       desc: language === 'hi' ? 'UPSC, SSC, रेलवे, बैंक, पुलिस - उम्र छूट, परीक्षा पैटर्न, सिलेबस व सैलरी।' : 'UPSC, SSC, Railways, Bank, Police - age relaxations, syllabus, pay scale and perks.',
       icon: Landmark,
       color: 'bg-emerald-500',
@@ -48,10 +57,10 @@ export default function Home() {
     },
     {
       to: '/explore',
-      title: language === 'hi' ? '3. करियर एक्सप्लोरर' : '3. Career Explorer (10th/12th)',
+      title: language === 'hi' ? '4. करियर एक्सप्लोरर' : '4. Career Explorer (10th/12th)',
       desc: language === 'hi' ? 'साइंस, कॉमर्स, आर्ट्स के अलावा ITI, पॉलिटेक्निक और डिप्लोमा के व्यावहारिक मार्ग।' : 'Science, Commerce, Arts plus ITI, Polytechnic, Agniveer and NSDC skill programs.',
       icon: Compass,
-      color: 'bg-tealAccent-500',
+      color: 'bg-cyan-600',
       badge: 'Compare Paths'
     },
     {

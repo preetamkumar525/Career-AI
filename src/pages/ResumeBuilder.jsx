@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { useGamification } from '../context/GamificationContext';
+import { useSkillProfile } from '../context/SkillProfileContext';
 import { improveResumeBullet } from '../services/aiService';
 import {
   FileText,
@@ -16,31 +17,44 @@ import {
   ChevronRight,
   Mail,
   Phone,
-  MapPin
+  MapPin,
+  ScanLine
 } from 'lucide-react';
 
-export default function ResumeBuilder() {
-  const { language, t } = useLanguage();
-  const { addXP, unlockBadge } = useGamification();
-
-  const [activeTemplate, setActiveTemplate] = useState('modern'); // 'modern' or 'classic'
-  const [activeTab, setActiveTab] = useState('edit'); // for mobile: 'edit' or 'preview'
-  const [isEnhancing, setIsEnhancing] = useState(false);
-  const [enhancedSuggestions, setEnhancedSuggestions] = useState([]);
-  const [enhancingIndex, setEnhancingIndex] = useState(null);
-
-  const [resumeData, setResumeData] = useState({
+const buildResumeFromProfile = (skillProfile) => {
+  return {
     fullName: 'Aman Kumar Sharma',
-    targetRole: 'Aspiring Junior Software Engineer / Web Developer',
+    targetRole: skillProfile?.bestCareerMatch?.title || 'Aspiring Junior Software Engineer / Web Developer',
     email: 'aman.sharma2026@email.com',
     phone: '+91 98765 43210',
     location: 'Varanasi, Uttar Pradesh',
-    summary: 'Diligent 12th PCM passout with practical foundation in Python, React, and Database systems. Passionate about solving real-world challenges through technology and fast learning.',
-    education: [
-      { id: 1, institution: 'Govt Boys Inter College, Varanasi', degree: 'Class 12 (Science - PCM)', year: '2024 - 2026', grade: '86.4%' },
-      { id: 2, institution: 'SVM High School', degree: 'Class 10 (Matriculation)', year: '2022 - 2024', grade: '91.2%' }
-    ],
-    skills: 'Python, JavaScript, React.js, Tailwind CSS, SQL, Git & GitHub, Problem Solving, Communication',
+    summary: skillProfile
+      ? `Goal-driven student with practical foundation in ${skillProfile.skills?.slice(0, 3).join(', ')}. Completed ${skillProfile.educationLevel} (${skillProfile.stream || ''}) with strong aptitude for learning.`
+      : 'Diligent 12th PCM passout with practical foundation in Python, React, and Database systems. Passionate about solving real-world challenges through technology and fast learning.',
+    education: skillProfile
+      ? [
+          {
+            id: 1,
+            institution: skillProfile.boardUniversity || 'State Board / Central University',
+            degree: `${skillProfile.educationLevel} (${skillProfile.stream || 'General'})`,
+            year: '2024 - 2026',
+            grade: 'First Division'
+          },
+          {
+            id: 2,
+            institution: 'SVM Secondary School',
+            degree: 'Class 10 (Matriculation)',
+            year: '2022 - 2024',
+            grade: '88.5%'
+          }
+        ]
+      : [
+          { id: 1, institution: 'Govt Boys Inter College, Varanasi', degree: 'Class 12 (Science - PCM)', year: '2024 - 2026', grade: '86.4%' },
+          { id: 2, institution: 'SVM High School', degree: 'Class 10 (Matriculation)', year: '2022 - 2024', grade: '91.2%' }
+        ],
+    skills: skillProfile && skillProfile.skills?.length > 0
+      ? skillProfile.skills.join(', ')
+      : 'Python, JavaScript, React.js, Tailwind CSS, SQL, Git & GitHub, Problem Solving, Communication',
     projects: [
       {
         id: 1,
@@ -53,12 +67,32 @@ export default function ResumeBuilder() {
         description: 'Designed a simple inventory system to help village study circles catalogue and issue competitive exam preparation books.'
       }
     ],
-    achievements: [
-      'District Science Exhibition 2nd Prize for Automated Irrigation Model',
-      'Completed CS50 Introduction to Computer Science certificate (Harvard edX)',
-      'National Scholarship Portal (NSP) Merit Scholar 2025'
-    ]
-  });
+    achievements: skillProfile && (skillProfile.certificates?.length > 0 || skillProfile.courses?.length > 0)
+      ? [
+          ...skillProfile.certificates.map(c => `Completed ${c.certificateName} (${c.issuingInstitute}, ${c.completionYear})`),
+          ...skillProfile.courses.slice(0, 2).map(c => `Certified in ${c}`),
+          'National Scholarship Portal (NSP) Merit Scholar 2025'
+        ]
+      : [
+          'District Science Exhibition 2nd Prize for Automated Irrigation Model',
+          'Completed CS50 Introduction to Computer Science certificate (Harvard edX)',
+          'National Scholarship Portal (NSP) Merit Scholar 2025'
+        ]
+  };
+};
+
+export default function ResumeBuilder() {
+  const { language, t } = useLanguage();
+  const { addXP, unlockBadge } = useGamification();
+  const { skillProfile } = useSkillProfile();
+
+  const [activeTemplate, setActiveTemplate] = useState('modern'); // 'modern' or 'classic'
+  const [activeTab, setActiveTab] = useState('edit'); // for mobile: 'edit' or 'preview'
+  const [isEnhancing, setIsEnhancing] = useState(false);
+  const [enhancedSuggestions, setEnhancedSuggestions] = useState([]);
+  const [enhancingIndex, setEnhancingIndex] = useState(null);
+
+  const [resumeData, setResumeData] = useState(() => buildResumeFromProfile(skillProfile));
 
   const handleEnhanceBullet = async (index, currentText) => {
     setIsEnhancing(true);
@@ -134,6 +168,30 @@ export default function ResumeBuilder() {
           </button>
         </div>
       </div>
+
+      {/* Auto-filled from Skill Scanner Banner */}
+      {skillProfile && (
+        <div className="p-4 rounded-2xl bg-tealAccent-50 dark:bg-tealAccent-950/40 border border-tealAccent-200 dark:border-tealAccent-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 no-print">
+          <div className="flex items-center gap-2.5">
+            <ScanLine className="w-5 h-5 text-tealAccent-600 shrink-0" />
+            <div>
+              <p className="text-xs sm:text-sm font-bold text-tealAccent-900 dark:text-tealAccent-100">
+                ✨ Auto-filled from your Smart Skill Scanner profile
+              </p>
+              <p className="text-[11px] text-tealAccent-700 dark:text-tealAccent-300">
+                Education: <span className="font-semibold">{skillProfile.educationLevel}</span> • Skills: <span className="font-semibold">{skillProfile.skills?.length || 0} skills imported</span> • Certificates: <span className="font-semibold">{skillProfile.certificates?.length || 0} added</span>
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => setResumeData(buildResumeFromProfile(skillProfile))}
+            className="px-3 py-1.5 rounded-xl bg-tealAccent-600 hover:bg-tealAccent-700 text-white text-xs font-bold shrink-0 transition-colors"
+          >
+            Re-sync Scanner Profile
+          </button>
+        </div>
+      )}
 
       {/* Mobile Tab Toggle (Edit / Preview) */}
       <div className="lg:hidden flex border-b border-slate-200 dark:border-slate-800 no-print">

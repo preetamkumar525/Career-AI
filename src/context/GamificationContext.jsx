@@ -5,6 +5,7 @@ const GamificationContext = createContext();
 
 const INITIAL_BADGES = [
   { id: 'quiz_master', name: 'Quiz Master', name_hi: 'क्विज़ मास्टर', icon: '🎯', desc: 'Completed the 12-question Career Quiz', unlocked: false },
+  { id: 'scanner_pro', name: 'Skill Scout', name_hi: 'स्किल स्काउट', icon: '🔍', desc: 'Scanned certificates & verified your smart skill profile', unlocked: false },
   { id: 'roadmap_pioneer', name: 'Roadmap Pioneer', name_hi: 'रोडमैप पायनियर', icon: '🗺️', desc: 'Generated a personalized 6-month study roadmap', unlocked: false },
   { id: 'resume_ready', name: 'Resume Pro', name_hi: 'रिज्यूमे प्रो', icon: '📄', desc: 'Drafted your first professional career resume', unlocked: false },
   { id: 'gap_analyzer', name: 'Skill Strategist', name_hi: 'स्किल रणनीतिकार', icon: '📊', desc: 'Audited your skills against target industry requirements', unlocked: false },

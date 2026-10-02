@@ -21,7 +21,8 @@ import {
   Users,
   Menu,
   X,
-  Rocket
+  Rocket,
+  ScanLine
 } from 'lucide-react';
 
 export default function Navbar() {
@@ -35,6 +36,7 @@ export default function Navbar() {
   const navLinks = [
     { to: '/', label: t('nav_home'), icon: Compass },
     { to: '/quiz', label: t('nav_quiz'), icon: Sparkles, highlight: true },
+    { to: '/skill-scanner', label: t('nav_scanner') || 'Skill Scanner', icon: ScanLine, highlight: true },
     { to: '/explore', label: t('nav_explore'), icon: BookOpen },
     { to: '/govt-jobs', label: t('nav_govt'), icon: Landmark },
     { to: '/trending', label: t('nav_trending'), icon: TrendingUp },

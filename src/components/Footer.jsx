@@ -77,6 +77,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/skill-scanner" className="hover:text-tealAccent-400 transition-colors text-tealAccent-400 font-semibold">
+                  {language === 'hi' ? '✨ स्मार्ट स्किल स्कैनर' : '✨ Smart Skill Scanner'}
+                </Link>
+              </li>
+              <li>
                 <Link to="/roadmap" className="hover:text-tealAccent-400 transition-colors">
                   {language === 'hi' ? 'पर्सनलाइज़्ड रोडमैप जनरेटर' : 'Personalised Roadmap Generator'}
                 </Link>
